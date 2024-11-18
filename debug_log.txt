@@ -1,0 +1,1188 @@
+2024-11-13 16:31:42,323 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 16:31:42,324 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 16:31:42,628 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 16:31:42,629 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 16:31:42,929 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 16:31:42,930 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 16:31:42,931 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 16:31:42,931 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 16:31:42,936 - DEBUG - Using proactor: IocpProactor
+2024-11-13 16:32:29,905 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 16:32:29,906 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 16:32:30,205 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 16:32:30,206 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 16:32:30,504 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 16:32:30,504 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 16:32:30,504 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 16:32:30,504 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 16:32:30,509 - DEBUG - Using proactor: IocpProactor
+2024-11-13 16:34:09,208 - DEBUG - Prompt recebido: oi
+2024-11-13 16:34:09,208 - DEBUG - Prompt processado: oi
+2024-11-13 16:34:09,211 - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'oi'}], 'model': 'llama3-8b-8192'}}
+2024-11-13 16:34:09,231 - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2024-11-13 16:34:09,232 - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2024-11-13 16:34:09,408 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F37A593D50>
+2024-11-13 16:34:09,408 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F37A45BD10> server_hostname='api.groq.com' timeout=5.0
+2024-11-13 16:34:09,429 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F37A53C290>
+2024-11-13 16:34:09,429 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-11-13 16:34:09,429 - DEBUG - send_request_headers.complete
+2024-11-13 16:34:09,429 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-11-13 16:34:09,429 - DEBUG - send_request_body.complete
+2024-11-13 16:34:09,429 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-11-13 16:34:10,145 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 13 Nov 2024 19:34:13 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29995'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'10ms'), (b'x-request-id', b'req_01jckg9sscfyqr4yc9cdgsyxvb'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=hCt_LAu4_mh3j9y3NGfw_O.5f9WHUXd1Vu57xdia0i0-1731526453-1.0.1.1-BUoRkTx1T3QOr4dLguUTOWiF2LeNam7nYxP6ukYjAwRoxhksXdmhROVpoIkIajFaEhEjcsDI5oKO07nFcjqC2Q; path=/; expires=Wed, 13-Nov-24 20:04:13 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8e2132a7cf1ae117-GIG'), (b'Content-Encoding', b'gzip')])
+2024-11-13 16:34:10,145 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-13 16:34:10,145 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-11-13 16:34:10,146 - DEBUG - receive_response_body.complete
+2024-11-13 16:34:10,146 - DEBUG - response_closed.started
+2024-11-13 16:34:10,146 - DEBUG - response_closed.complete
+2024-11-13 16:34:10,146 - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Wed, 13 Nov 2024 19:34:13 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29995', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '10ms', 'x-request-id': 'req_01jckg9sscfyqr4yc9cdgsyxvb', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=hCt_LAu4_mh3j9y3NGfw_O.5f9WHUXd1Vu57xdia0i0-1731526453-1.0.1.1-BUoRkTx1T3QOr4dLguUTOWiF2LeNam7nYxP6ukYjAwRoxhksXdmhROVpoIkIajFaEhEjcsDI5oKO07nFcjqC2Q; path=/; expires=Wed, 13-Nov-24 20:04:13 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8e2132a7cf1ae117-GIG', 'content-encoding': 'gzip'})
+2024-11-13 16:34:10,147 - DEBUG - Resposta recebida da Groq API: Oi!
+2024-11-13 16:34:10,147 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-13 16:35:03,413 - DEBUG - Prompt recebido: teste
+2024-11-13 16:35:03,413 - DEBUG - Prompt processado: teste
+2024-11-13 16:35:03,414 - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'teste'}], 'model': 'llama3-8b-8192'}}
+2024-11-13 16:35:03,414 - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2024-11-13 16:35:03,415 - DEBUG - close.started
+2024-11-13 16:35:03,415 - DEBUG - close.complete
+2024-11-13 16:35:03,415 - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2024-11-13 16:35:03,422 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F37A5B8290>
+2024-11-13 16:35:03,422 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F37A45BD10> server_hostname='api.groq.com' timeout=5.0
+2024-11-13 16:35:03,433 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F37A5B8150>
+2024-11-13 16:35:03,434 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-11-13 16:35:03,434 - DEBUG - send_request_headers.complete
+2024-11-13 16:35:03,434 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-11-13 16:35:03,434 - DEBUG - send_request_body.complete
+2024-11-13 16:35:03,434 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-11-13 16:35:03,678 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 13 Nov 2024 19:35:06 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29994'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'12ms'), (b'x-request-id', b'req_01jckgbe2be7mthkaz6bpzg61h'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8e2133f94eafdf4f-GIG'), (b'Content-Encoding', b'gzip')])
+2024-11-13 16:35:03,678 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-13 16:35:03,678 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-11-13 16:35:03,678 - DEBUG - receive_response_body.complete
+2024-11-13 16:35:03,678 - DEBUG - response_closed.started
+2024-11-13 16:35:03,678 - DEBUG - response_closed.complete
+2024-11-13 16:35:03,679 - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Wed, 13 Nov 2024 19:35:06 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29994', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '12ms', 'x-request-id': 'req_01jckgbe2be7mthkaz6bpzg61h', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '8e2133f94eafdf4f-GIG', 'content-encoding': 'gzip'})
+2024-11-13 16:35:03,679 - DEBUG - Resposta recebida da Groq API: Um breve teste!
+2024-11-13 16:35:03,679 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-13 16:35:15,402 - DEBUG - Prompt recebido: conte-me uma história
+2024-11-13 16:35:15,402 - DEBUG - Prompt processado: conte-me uma história
+2024-11-13 16:35:15,403 - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'conte-me uma história'}], 'model': 'llama3-8b-8192'}}
+2024-11-13 16:35:15,404 - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2024-11-13 16:35:15,404 - DEBUG - close.started
+2024-11-13 16:35:15,404 - DEBUG - close.complete
+2024-11-13 16:35:15,404 - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2024-11-13 16:35:15,429 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F37A5BB0D0>
+2024-11-13 16:35:15,429 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F37A45BD10> server_hostname='api.groq.com' timeout=5.0
+2024-11-13 16:35:15,442 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F378F70ED0>
+2024-11-13 16:35:15,442 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-11-13 16:35:15,442 - DEBUG - send_request_headers.complete
+2024-11-13 16:35:15,443 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-11-13 16:35:15,443 - DEBUG - send_request_body.complete
+2024-11-13 16:35:15,443 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-11-13 16:35:16,184 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 13 Nov 2024 19:35:19 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29990'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'20ms'), (b'x-request-id', b'req_01jckgbss4fxeagvhn0n1ds0xz'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8e2134445928cadb-GIG'), (b'Content-Encoding', b'gzip')])
+2024-11-13 16:35:16,185 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-13 16:35:16,185 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-11-13 16:35:16,185 - DEBUG - receive_response_body.complete
+2024-11-13 16:35:16,185 - DEBUG - response_closed.started
+2024-11-13 16:35:16,185 - DEBUG - response_closed.complete
+2024-11-13 16:35:16,185 - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Wed, 13 Nov 2024 19:35:19 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29990', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '20ms', 'x-request-id': 'req_01jckgbss4fxeagvhn0n1ds0xz', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'cf-ray': '8e2134445928cadb-GIG', 'content-encoding': 'gzip'})
+2024-11-13 16:35:16,186 - DEBUG - Resposta recebida da Groq API: Gostaria de contar uma história para você?!
+
+Uma vez, havia um reino mágico chamado Arcadia, rodeado por montanhas brilhantes e um lago de água cristalina. O reino foi governado por uma bela rainha chamada Luna, que possuía um coração de prata e uma alma sábia.
+
+A rainha Luna vivia em um castelo de pedra branca, rodeado por um jardim cheio de flores de mil cores. Ela possuía um esplendido cortejo de pares de cavaleiros, cavaleiros de dedo nu, brigadores, músicos e cortesãos.
+
+Uma criança louca era a melhor amiga da rainha. Ela se chamava Estrela, e era uma menina com cabelos loiros e olhos azuis de um celeste absoluto. Ela crescera no reino, e a rainha a havia criado como uma filha. A rainha havia recebido uma profecia que predizia a próxima rainha de Arcadia seria uma pessoa com a essência do céu e da terra.
+
+Um dia, uma feiticeira rival chamada Malícia, que vivia nas montanhas escuras, descobriu a profecia e decidiu invadir Arcadia para roubar o trono da rainha. Ela enviou seus demônios para derrubar o castelo e matar a rainha.
+
+Quando a rainha Luna descobriu a invasão, ela pediu ajuda ao seu fiel cavaleiro, Sir Valentine, para protegê-la e salvar o reino. Sir Valentine aceitou o desafio e partiu para lutar contra os demônios.
+
+Impelidos pela fé e pela amizade, Estrela resolveu seguir Sir Valentine à batalha. Ela sabia que era a única que podia parar Malícia, pois possuía o poder de controlar a lousa.
+
+Durante a batalha, Estrela enfrentou Malícia e utilizou sua magia para derrotá-la e quebrar sua feitiçaria. O reino foi salvo, e o castelo reconstruído ainda mais belo.
+
+A rainha Luna, ao ver a bravura da filha adotiva, anunciou que Estrela seria a próxima rainha de Arcadia. Estrela, com o coração cheio de gratidão, aceitou o trono e governou o reino com sabedoria e bondade.
+
+E assim, Arcadia foi governada por rainhas sábias e justas, e o reino floresceu em harmonia e segurança.
+
+Foi uma história de amor, amizade, coragem e magia, espero que tenha gostado!
+2024-11-13 16:35:16,186 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-13 16:36:15,649 - DEBUG - Prompt recebido: teste
+2024-11-13 16:36:15,649 - DEBUG - Prompt processado: teste
+2024-11-13 16:36:15,651 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 16:36:16,871 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 452
+2024-11-13 16:36:16,871 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-ae833afa-2378-4bfc-ad8a-9175feda73b3', 'object': 'chat.completion', 'created': 1731526575, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje? Se você tiver alguma pergunta ou precisar de informações sobre um determinado tema, estou aqui para auxiliar.', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 37, 'total_tokens': 67}}
+2024-11-13 16:36:16,872 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-13 16:36:30,883 - DEBUG - Prompt recebido: Conte me uma história
+2024-11-13 16:36:30,883 - DEBUG - Prompt processado: Conte me uma história
+2024-11-13 16:36:30,884 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 16:36:45,444 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 2434
+2024-11-13 16:36:45,444 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-b99da7e1-64ae-4db8-ba70-b0aef88755ac', 'object': 'chat.completion', 'created': 1731526590, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Claro! Vou contar uma história original para você. Era uma vez, em um pequeno vilarejo ao lado de uma encantadora floresta, havia uma jovem chamada Lea.\n\nLea era uma menina curiosa e corajosa que sonhava com aventuras. Ela vivia com sua avó na borda da floresta, ajudando-a a cuidar da casa. Um dia, enquanto estava coletando ervas medicinais nas margens do rio que cortava o vilarejo, Lea encontrou uma flor rara e colorida cuja beleza era inigualável.\n\nCuriosa sobre o poder desta flor, Lea decidiu trazer a flor para casa. No entanto, ao voltar, ela notou que um estranho fogo estava se alastrando através da floresta, ameaçando as casas e vidas dos moradores locais.\n\nCom o coração apertado, Lea percebeu que a flor rara poderia ser a chave para parar o fogo. Sem hesitar, ela entrou na floresta já em chamas, usando todo seu conhecimento sobre ervas medicinais para tentar descobrir uma maneira de apagar o incêndio.\n\nApós horas de perseguição e obstáculos inimagináveis, Lea encontrou um ancião escondido atrás de um cipreste velho. O ancião revelou que a flor era, na verdade, parte do manto de um dragão dormindo nas profundezas da floresta. Ele explicou que o fogo era apenas um sonho transformado pela energia negativa acumulada durante os anos.\n\nLea pediu desculpas ao ancião e prometeu apagar o incêndio sem causar nenhum dano à floresta. Usando sabedoria e coragem, ela conseguiu encontrar a flor que estava escondida entre as árvores. Com o poder da flor, Lea foi capaz de apagar o fogo e despertar o dragão do seu sono profundo.\n\nO dragão agradeceu a Lea por sua bravura e generosidade. Ele então fez um pedido: que ela fosse a guardiã da floresta para sempre, usando seu poder para manter a paz. Com gratidão, Lea aceitou o cargo.\n\nDesde então, Lea tornou-se uma figura amada no vilarejo e na floresta. Ela ajudava a curar as feridas humanas e animais, protegendo a floresta de perigos que viessem por ela.\n\nE assim terminou nossa história sobre Lea, a garota que usou coragem, sabedoria e um pouco da magia das ervas para salvar o vilarejo e se tornar sua guardiã.', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 34, 'completion_tokens': 623, 'total_tokens': 657}}
+2024-11-13 16:36:45,444 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-13 16:48:13,929 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 16:48:13,930 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 16:48:14,234 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 16:48:14,234 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 16:48:14,541 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 16:48:14,541 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 16:48:14,541 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 16:48:14,541 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 16:48:14,548 - DEBUG - Using proactor: IocpProactor
+2024-11-13 16:51:45,973 - DEBUG - Prompt recebido: oi
+2024-11-13 16:51:45,973 - DEBUG - Prompt processado: oi
+2024-11-13 16:51:45,975 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 16:51:46,318 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 339
+2024-11-13 16:51:46,318 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-3b2d1e3b-4a8c-4a3b-b52b-a9774df73130', 'object': 'chat.completion', 'created': 1731527505, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
+2024-11-13 16:51:46,318 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-13 16:51:58,337 - DEBUG - Prompt recebido: o que tem nessa petição?
+2024-11-13 16:51:58,338 - DEBUG - O PDF estava em base64.
+2024-11-13 16:51:58,578 - DEBUG - Prompt processado: o que tem nessa petição?
+
+Página 1 EXCELENTÍSSIMO SENHOR JUIZ DE DIREITO DA ___ VARA
+DE FAZENDA PÚBLICA DA COMARCA DA CAPITAL SEBASTIÃO JOSÉ DOS
+SANTOS , brasileiro, casado, aposentado, portador da cédula de identidade
+de n° 510914 -14-9, do IFP/RJ, inscrito no CPF sob
+o n° 444.682.707 -30, residente e domiciliado na Rua Francisco
+Xavier da Motta, nº 300, casa 01, Paineiras – Rio
+Bonito/RJ, CEP. 28.800 -000, não possui endereço eletrônico por seus
+advogados ad iante assinados que recebe as intimações em seu
+escritório sito Travessa Alexandre Ferreira, Lj . 16 – Centro
+– Rio Bonito/RJ , endereço eletrônico: laudeciadv@gmail.com , vem propor
+a presente AÇÃO DE COBRANÇA DE FÉRIAS E LICENÇAS PRÉMIOS
+NÃO GOZADAS em face do ESTADO DO RIO DE JANEIRO
+, na pessoa do Procurador Geral do Estado, com sede
+na Rua Dom Manuel no. 25, Centro, nesta cidade, pelos
+fatos e fundamentos que passa a expor: Página 2 DA
+GRATUIDADE DE JUSTIÇA Em que pese o autor possuir uma
+aposentadoria com valor significativo, o autor encontra -se em situação
+de insolvência cível mediante as diversas obrigações fixas que possui,
+quais sejam, quatro filh os, sendo 2 pensionistas e um
+menor impúbere, 1 ex esposa pensionista, uma esposa atual dependente
+financeira, despesas com escola de seu filho, aluguel, possui débitos
+com a receita federal e encontra -se com seu nome
+negativado, tudo conforme documentos a costados, os quais comprovam sua
+total incapacidade financeira para arcar com as despesas do presente
+processo. Diante do exposto, requer seja deferido o benefício d
+a gratuidade de justiça ao autor, eis que o mesmo
+não possui atualmente condições de arcar com as custas do
+process o sem prejuízo de seu sustento, de sua família
+e de seus dependentes, de acordo com o disposto pelo
+art. 5º, LXXIV, da CF, e pelo art. 98 e
+seguintes do CPC. Subsidiariamente , caso não seja este o
+entendimento do juízo, requer seja deferido o pagamento das custas
+ao final , a fim de evitar o evento da
+prescrição, já que o autor não possui condições atuais e
+já encontra -se aguardando para ingressar com a presente ação
+há cerca d e um ano exatamente por ausência de
+condições de arcar com tais custas DOS FATOS Página 3
+O Autor é servidor público aposentado, Especialista Legislativ o nível
+V, matricula 201 158 -3, aposentado a pedido em 03/07/2018
+através do Ato “E”/MD/Nº 2945/2018 publicado no D.O de 05/09/2018
+. 1. DAS FÉRIAS ADQUIRIDAS E NÃO GOZADAS O autor
+durante o tempo de atividade adquiriu mas não gozou qualquer
+período de férias referentes aos exercícios de 1999 a 2013
+, totalizando 14 férias não gozadas, bem como gozou de
+apenas 15 dias de férias referentes ao período de 2014
+a 2017 , totalizando 4 férias gozadas parcialmente, conforme declaração
+emitida pelo Diretor do Departamento de Administração de Pessoal ora
+acosta da. As férias são um direito Constitucional e uma
+obrigação do Estado em colocar o servidor de férias de
+30 (trinta) dias por cada ano trabalhado, até mesmo na
+hipótese em que o servidor não queira descansar, uma vez
+que as férias se tratam de direito irrenunciável, conforme se
+extrai do Art. 7º, XVII da CF: Art. 7º São
+direitos dos trabalhadores urbanos e rurais, além de outros que
+visem à melhoria de sua condição social: (...) XVII -
+gozo de férias anuais remuneradas com, pelo menos, um terço
+a mais do que o salário normal; Assim também reza
+o artigo 77 da Lei nº. 8.112/90: Página 4 Art.
+77. O servidor fará jus a trinta dias de férias,
+que podem ser acumuladas, até o máximo de dois períodos,
+no caso de necessidade do serviço, ressalvadas as hipóteses em
+qu e haja legislação específica. (Redação dada pela Lei nº
+9.525, de 10.12.97). Portanto, não restam dúvidas sobre a finalidade
+das férias. Elas são, em verdade, consequência e extensão natural
+das atividades profissionais, em relação íntima com a saúde men
+tal do trabalhador, para que este possa continuar desempenhando bem
+suas atribuições laborais. É pacífica a jurisprudência no sentido de
+que o servidor público aposentado tem direito ao recebimento de
+indenização pelas férias não gozadas, adquiridas ao tempo da atividade,
+sob pena de enriquecim ento sem causa da Administração, bem
+como que o direito de exigir a indenização nasce a
+partir da aposentadoria: Trata-se de ação em q ue o
+autor pretende o pagamento dos valores correspondentes à conversão em
+pecúnia das férias não gozadas, relativas aos anos de 2003,
+2004, 2005, 2006, 2007 e 2008. Contestação aduzindo, em síntese,
+inicialmente, a falta de interesse de agir. No mérito, alega
+a prescrição, a inconstitucionalidade do art. 97, XVII da Constituição
+do Estado do Rio de Janeiro, que trazia tal previsão
+e a observância do princípio da legalidade. Requer a improcedência
+dos pedidos. Sentença julgando procedente o pedido condenand o o
+Réu ao pagamento a título de ressarcimento pelas férias não
+gozadas, referentes aos períodos de 2003 a 2008. Recurso Inominado
+do réu objetivando a extinção do feito sem análise de
+mérito ou a reforma da sentença, para que o pedido
+seja julgado improce dente. O Ministério Público opinou pelo conhecimento
+do recurso e seu Página 5 não provimento. VOTO Inicialmente,
+rejeito a preliminar arguida pelo réu de falta de interesse
+de agir. Não é necessária a utilização da esfera administrativa
+precedentemente. Pelo dispo sto no art. 5º, XXXV, Constituição Federal,
+"a lei não excluirá da apreciação do Poder Judiciário, lesão
+ou ameaça de direito." No que tange ao mérito, deve
+ser ressaltado que não há previsão legal a respeito de
+indenização de férias não gozadas para os servidores sob regime
+estatutário, sendo assim, este dever foi construído pela jurisprudência sob
+a égide de diversos princípios e com base na responsabilidade
+civil do Estado. Vale mencionar que o direito de férias
+é assegurado, constitucionalmente, pelo ar t. 7º, inciso XVII. A
+CLT regula a matéria nos arts. 129 a 153. Este
+direito é aplicado a todos os empregados (rural e urbano),
+servidores públicos (art. 39, parágrafo 3º da CF), membros das
+forças armadas (art. 142, parágrafo 3º, inciso VIII da CF)
+e empr egados domésticos (art. 7, parágrafo único da CF).
+Também está consagrado no âmbito internacional pela OIT nas Convenções
+nºs 522, 1013 e 132. Como é notório, o direito
+a férias tem o objetivo de proporcionar ao trabalhador um
+tempo mais prolongado e neces sário de repouso. Essa pausa
+visa o ajuste do tempo de trabalho a padrões adequados
+de esforço/repouso, preservando, desta forma, a saúde do trabalhador e
+evitando, por conseguinte, eventuais enfermidades e acidentes de trabalho. O
+direito a férias e o seu efetivo desfrute, ademais de
+permitir o repouso e a recuperação dos desgastes físicos e
+psicológicos produzidos pela atividade laboral, buscam, entre suas finalidades, disponibilizar
+um maior convívio do trabalhador com sua família e com
+a comunidade na q ual está inserido. Quanto à alegação
+de prescrição a mesma não procede. De acordo com o
+entendimento pacificado tanto no âmbito do Tribunal de Justiça do
+Rio de Janeiro e do Superior Tribunal de Justiça, a
+contagem do prazo prescricional para pleitear a in denização relativa
+às férias não gozadas tem início com a Página 6
+aposentadoria do servidor. Logo, se aposentadoria ainda não ocorreu, não
+há que se falar em prescrição. Neste sentido os Acórdãos:
+2007.001.23184 - Apelação Cível nº. Décima Sexta Câmara Cível. Des.
+Mônica Costa de Pietro. Data do Julgamento: 17/07/2007AGRAVO INTERNO. AÇÃO
+INDENIZATÓRIA. FÉRIAS E LICENÇA -PRÊMIO NÃO GOZADAS. PRESCRIÇÃO QUINQUENAL INOCORRENTE.
+POSSIBILIDADE DE CONVERSÃO EM PECÚNIA DOS PERÍODOS NÃO GOZADOS. ISENÇÃO
+DE CUSTAS. HONORÁRIOS SOBRE O VALOR DA CONDENAÇÃO. Objetiva a
+reforma da decisão monocrática da relatora que negou seguimento ao
+recurso de apelação, mantendo a sentença de procedência do pedido.
+Trata -se de ação na qual alega o autor que
+se aposentou em março de 2002 no cargo de Titular
+de 1ª Categoria, índice 2000 do Tribunal de Justiça do
+Estado do Rio de Janeiro e que deixou de usufruir
+de 10 períodos de férias, pertinentes aos anos de 1972
+a 1981 e 10 dias do ano de 1982, além
+de não ter gozado 9 períodos de licença prêmio .
+Não há que se falar em prescrição. O direito do
+servidor de reivindicar o pagamento de indenização pelo serviço prestado
+ao ente público sem a contraprestação inicia -se com o
+ato de aposentadoria . O autor se aposentou no início
+do ano de 2002 e ajuizou a ação em 30/11/2005,
+não transcorreu o prazo prescricional qüinqüenal. Não gozou dos períodos
+de férias e de licença -prêmio a que tinha direito.
+A negativa de indenização de tais períodos constitui enriquecimento sem
+causa pelo ente público. Entendimento a ssente no STJ da
+possibilidade de conversão em pecúnia dos períodos de férias e
+licença -prêmios não gozadas, independentemente da existência de previsão legal,
+invocando o interesse público e na responsabilidade objetiva do Estado.
+Recurso improvido. 01233 34- 54.2009.8.19.0001 APELACAO - 1ª Ementa DES.
+LETICIA SARDAS Julgamento: 03/08/2010 - VIGESIMA CÂMARA CIVEL POLICIAL CIVIL
+FERIAS NAO GOZADAS DIREITO A INDENIZACAO PRINCIPIO DO NAO ENRIQUECIMENTO
+SEM CAUSA Página 7 "ADMINISTRATIVO. POLICIAL CIVIL. FÉRIAS VENCIDAS E
+NÃO GOZADAS. PRETENSÃO DE INDENIZAÇÃO. CABIMENTO. PRINCÍPIO DO NÃO ENRIQUECIMENTO
+SEM CAUSA. PRECEDENTES JURISPRUDENCIAIS. DESPROVIMENTO DO RECURSO. 1. Em que
+pese a possibilidade do indeferimento do pedido de férias do
+servidor público diante da imperio sa necessidade de serviço, tal
+situação não pode resultar na supressão desse direito, que, caso
+não exercido, deve ensejar compensação, de natureza pecuniária, sob pena
+de enriquecimento ilícito por parte do ente público. 2. A
+negativa do direito e a ausên cia da devida compensação
+pecuniária ofende o princípio contido no artigo 884 do Código
+Civil, que veda o enriquecimento sem causa. 3. Não há
+que se falar em prescrição do direito de se pleitear
+indenização das férias não gozadas, eis que seu termo a
+quo s e inicia apenas com a aposentadoria do servidor,
+o que não ocorreu na hipótese dos autos. 4. Desprovimento
+do apelo na forma do artigo 557, caput do CPC.
+(grifos nossos) A Administração Pública está regida pelo princípio da
+legalidade, artigo 37 da Constit uição da República. Tal princípio
+limita a atuação do administrador, que só pode fazer o
+que a lei permite. Assim, quanto ao pagamento de remuneração
+a servidores públicos, incluindo -se vencimentos e vantagens, impõe -se
+a observância ao disposto nos artigo s 169 inciso II
+e 37 inciso X ambos da Constituição da República, que
+determinam a existência de lei que estabeleça a remuneração do
+servidor. Apesar da declaração de inconstitucionalidade de parte do inciso
+XVII do artigo 77 da Constituição do Estado do R
+io de Janeiro, exatamente no tocante à possibilidade de transformar
+período de férias não gozadas em indenização, pelo STF na
+ADIN 227 -9, não se pode permitir que o servidor
+não usufrua do seu período de descanso e também não
+receba indenização pelo períod o trabalhado. Ademais, tampouco se justifica
+que o Estado se aproveite do trabalho de seus servidores,
+sem a devida contraprestação, pois se tal ocorresse agasalharíamos o
+denominado Página 8 enriquecimento ilícito. Deste modo, a pretensão deduzida
+não se funda no mencionado dispositivo, mas na indenização decorrente
+do corolário fundamental de Direito, segundo o qual é vedado
+o enriquecimento sem causa. Neste contexto, se a lei assegura
+ao servidor o gozo remunerado de férias, o seu impedimento
+pela Administração a bem do serviço público deve ser indenização,
+sob pena de locupletamento ilícito, violando -se, por conseguinte, o
+princípio da moralidade administrativa que deve nortear todos os atos
+praticados pela Administração . Saliente -se que o Tribunal de
+Justiça do Estado do Rio de Janeiro, firmou entendimento no
+sentido da possibilidade de conversão em pecúnia dos períodos de
+férias não gozadas, independentemente da existência de previsão legal, invocando
+o interesse público e na responsabilidade objetiva do Estado. Vejamos
+os Acórdãos: 0187050 -55.2009.8.19.0001 - APELACAO - 1ª Ementa, DES.
+ZELIA MARIA MACHADO - Julgamento: 31/03/2011 - QUINTA CÂMARA CIVEL
+ADMINISTRATIVO. Servidor público. Férias não gozadas a critério da administração.
+Prova. Pecúnia indenizatória. 1Pretensão a verba indenizatória em decorrência de
+férias não gozadas. Se a servidora fez prova de que
+não usufruiu férias por vontade da administração pública (art. 333
+I do CPC), impõe -se o pagamento da indenização, sob
+pena de enriquecimento ilícito. Di reito amparado no art. 7º
+inciso XVII c/c art. 39 § 3º da Constituição da
+República. Precedentes da Câmara.2 - Sentença mantida em reexame necessário.
+Apelação com seguimento negado pela relatora, na forma do art.
+557 do CPC. 0142690 -69.2008.8.19.0001 - APELACAO - 1ª Ementa,
+DES. MARIO GUIMARAES NETO Julgamento: 29/03/2011 - DECIMA SEGUNDA CÂMARA
+CIVEL - EMENTA: APELAÇÃO CÍVEL - DECISÃO MONOCRÁTICA INSPETOR DE
+POLÍCIA - FÉRIAS NÃO GOZADAS E NÃO REMUNERADAS - AUSÊNCIA
+DE LEGISLAÇAO PREVENDO INDENIZAÇÃO QUE NÃ O TEM O CONDÃO
+DE SUPRIMIR O ALUDIDO DIREITO QUANDO NÃO Página 9 GOZADAS
+AS FÉRIAS UTILIZAÇÃO DA FORÇA DE TRABALHO DURANTE AS FÉRIAS
+PRÁTICA QUE IMPLICA EM ENRIQUECIMENTO SEM CAUSA EM FAVOR DA
+ADMINISTRAÇÃO PÚBLICA - NEGATIVA DE SEGUIMENTO AO RECURSO (CPC, 557,
+CAP UT). 0280557 -70.2009.8.19.0001 - APELACAO - 1ª Ementa, DES.
+JACQUELINE MONTENEGRO - Julgamento: 01/02/2011 - DECIMA QUINTA CÂMARA CIVEL
+- DIREITO ADMINISTRATIVO - POLICIAL CIVIL. FÉRIAS NÃO GOZADAS. INDENIZAÇÃO.
+CABIMENTO. MANUTENÇÃO DA SENTENÇA. 1 - Apela do que objetiva
+indenização por férias não gozadas, por necessidade do serviço, referentes
+aos exercícios de 2003 a 2008.2 - A hipótese em
+questão visa indenizar o servidor, tendo em vista a indisponibilidade
+de direito constitucionalmente assegurado, não sendo o caso anteriormente previsto
+no artigo 77 da C.E., já que a conveniência não
+foi do servidor. Precedentes deste Tribunal e do STJ.3 -
+A utilização da força de trabalho no período de férias
+sem a devida remuneração redundaria em enriquecimento ilícit o do
+Estado.4 - Desprovimento do recurso 0269771 - 98.2008.8.19.0001 - APELACAO
+/ REEXAME NECESSARIO - 1ª Ementa, DES. CRISTINA TEREZA GAULIA
+- Julgamento: 01/02/2011 - QUINTA CÂMARA CIVEL APELAÇÃO. POLICIAL CIVIL.
+INDENIZAÇÃO DE FÉRIAS NÃO GOZADAS. NECESSID ADE DE SERVIÇO. PROVA
+NECESSÁRIA. Férias. Garantia fundamental do trabalhador extensiva aos servidores públicos.
+Aplicação dos arts. 7º, XVII c/c 39, § 3º, ambos
+da CF. Respeito à saúde física e mental do trabalhador.
+Possibilidade de restrição ao direito em razão da necessidade do
+serviço. Indenização devida, sob pena de enriquecimento indevido da administração.
+Inteligência do caput do art. 884 do CC. Jurisprudência do
+STF e do TJRJ. Prova de que as férias não
+teriam sido gozadas. Ônus do autor. Aplicação do art. 333,
+I do CPC. Jurisprudência do STJ e do TJRJ. Declaração
+do órgão público reconhecendo o não exercício do direito. Sentença
+de procedência. Manutenção. Mudança de posição Página 10 do Relator.
+Recurso a que se nega provimento. Pela análise do documento
+ju ntado pelo próprio recorrente, há o reconhecimento, de que
+o autor não gozou as férias nos anos de 2002,
+2003, 2004 e 2005. Logo, não restam dúvidas acerca do
+direito do autor. Todavia, assiste razão ao recorrente quanto ao
+argumento de que não há condenaç ão a título de
+honorários advocatícios em primeiro grau nos Juizados Especiais. O art.
+55 da Lei 9099/95 é claro ao dispor que: "A
+sentença de primeiro grau não condenará o vencido em custas
+e honorários de advogado, ressalvados os casos de litigância de
+má-fé. Em segundo grau, o recorrente, vencido, pagará as custas
+e honorários de advogado, que serão fixados entre dez por
+cento e vinte por cento do valor de condenação ou,
+não havendo condenação, do valor corrigido da causa." Do mesmo
+modo assiste razão ao recorrente, quanto ao percentual de juros
+a ser aplicado. No que tange ao índice aplicável ao
+caso, deve incidir o percentual de 0,5% ao mês, consoante
+o disposto no art. 1º -F da Lei nº 9.494/97,
+por se tratar de ação contra a Fazenda Pública, a
+fluir da citação. A partir de 29/06/2009, o cálculo da
+atualização monetária e da compensação de mora deve ocorrer nos
+moldes previstos no artigo 5º, da Lei nº 11.960/2009, que
+alterou a citada lei, para uniformizar a atualização monetária e
+dos juros incidentes so bre todas as condenações judiciais impostas
+à Fazenda Pública. Assim, necessária a reforma da sentença para
+excluir a condenação em honorários e aplicar o percentual de
+juros de 0,5% ao mês, de acordo com o disposto
+no art. 1º F da Lei nº 9.494/97. Desta f
+orma, encontrando -se presentes os requisitos de admissibilidade recursal, voto
+pelo conhecimento do recurso, dando -se parcial provimento ao mesmo.
+Sem custas face à isenção legal. Condeno o recorrente ao
+pagamento de honorários advocatícios, que fixo em R$ 270,00 (duzentos
+e setenta reais), de acordo o disposto no artigo 20,
+§ 4º do Código de Processo Civil, tomando -se como
+parâmetro o Enunciado nº 27 do Aviso nº 55/2009 do
+TJ/RJ. Página 11 (TJ-RJ - RI: 00463921020118190001 RJ 0046392 -
+10.2011.8.19.0001, Relator: LUI Z HENRIQUE OLIVEIRA MARQUES, Data de Julgamento:
+31/03/2011, Primeira Turma Recursal Fazendária, Data de Publicação: 11/06/2013 16:49)
+. Em 15/01/2018, Antes da aposentadoria, o autor chegou a
+requerer a concessão de tais férias, o que foi negado
+em março de 2018, e o autor requereu a indenização
+das mesmas, no entanto o pedido foi arquivado sem conclusão
+ou solução definitiva em 25/07/2019, conforme cópia do Processo nº
+466/208 acostada. Insta salientar que no mês anterior ao da
+sua aposentadoria, em abril de 2018, o autor encontra -se
+percebendo a remuneração de R$ 19.089,96, o que deve ser
+utilizado por base para fins de apuração do valor das
+férias e lincenças -prêmio. Diante do exposto, requer seja o
+réu condenado ao pagamento indenizatório dos períodos de férias adquiridos
+e não gozados referentes aos exercícios de 1999 a 2013
+, na razão de 30 dias cada e referentes ao
+período de 2014 a 2017 , na razão de 15
+dias cada, pois go zadas parcialmente, tendo por base o
+último vencimento do autor antes da aposentadoria , corrigidos monetariamente
+a partir da data em que deveriam ter sidos pagos
+e, sobretudo acrescidos de juros legais . 2. DAS LICENÇAS
+-PRÊMIOS NÃO GOZADAS Igualmente, o autor não gozou de 4
+(quatro ) licenças -prêmio , referentes aos 3º, 4º ,
+5º e 6º Página 12 quinquênios decorridos entre 15/09/1996 à
+14/09/2016 , conforme declaração acostada também emitida pelo Diretor do
+Departamento de Administração de Pessoal. Como se verifica dos julgados
+acima e respectivas jurisprudências transcritas, nossos Tribunais, igualmente, pacificaram o
+entendimento que é devido à indenização do período de licença
+prêmio não gozada na época própria, uma vez que admitir
+o contrário, import aria em dar ensejo ao enriquecimento ilícito
+da Administração. Assevera -se que indenização por férias e licença
+prêmio não gozadas além de reparar o dano material sofrido
+pela servidora, também tem por escopo compensar o dedicado servidor
+pelo tempo não usufruído para descanso e maior contato com
+a família em prol da coletividade, sendo configurada a Responsabilidade
+Civil do órgão público e devida a reparação nos moldes
+do art. 37 parágrafo 6º., da Constituição da República Federativa
+do Brasil. Art. 37. A administração pública direta e indireta
+de qualquer dos Poderes da União, dos Estados, do Distrito
+Federal e dos Municípios obedecerá aos princípios de legalidade, impessoalidade,
+moralidade, publicidade e eficiência e, também, ao seguinte: (...) §
+6º As pessoas jurídicas de direito público e as de
+direito privado prestadoras de serviços públicos responderão pelos danos que
+seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito
+de regresso contra o responsável nos casos de dolo ou
+culpa. Destaca -se que a indenização das férias e licença
+-prêmio não gozadas independe do motivo pelo qual o Página
+13 benefício não fora usufruído. Ainda que a permanência da
+servidora no trabalho não decorra de imposição da autoridade administrativa,
+subsiste o dever de indenizar, p ois a não interrupção
+das atividades sempre reverte em benefício da Administração. Portanto, calcados
+no pressuposto da responsabilidade objetiva do Estado, Administração tem o
+dever de indenizar os servidores pelos danos advindos da não
+fruição do direito de férias ou de licença -prêmio. Diante
+do exposto, requer seja o réu condenado ao pagamento indenizatório
+das licenças -prêmio não gozadas referentes aos 3º, 4º, 5º
+e 6º quinquênios decorridos entre 15/09/1996 à 14/09/2016 , tendo
+por base o ultimo venci mento do autor antes da
+aposentadoria, corrigidos monetariamente a partir da data em que deveriam
+ter sidos pagos e, sobretudo acrescidos de juros legais .
+DEMONSTRATIVO DAS VERBAS Último Vencimento: Abril de 2018. Valor Bruto:
+R$ 19.089,96. 1. Das Férias Períodos Integrais de Férias 14
+Valor Bruto R$ 267.259,44 Períodos parciais de Férias (15 dias)
+4 Valor Bruto R$ 38.170,82 Total R$ 305.439,36 Página 14
+2. Licença -Prêmio Quantidade de Licenças não Gozadas 4 Total
+de Meses 12 Valor Bruto R$ 229.079,52 DOS PEDIDOS Diante
+do exposto, o autor requer: 1. Diante do exposto, requer
+seja deferido o benefício d a gratuidade de justiça ao
+autor , eis que o mesmo não possui atualmente condições
+de arcar com as custas do process o sem prejuízo
+de seu sustento, de sua família e de seus dependentes
+, de acordo com o disposto pelo art. 5º, LXXIV,
+da CF, e pelo art. 98 e seguintes do CPC.
+2. Subsidiariamente , caso não seja este o entendimento do
+juízo, requer seja deferido o pagamento das custas ao final
+, a fim de evitar o evento da prescrição, já
+que o autor não possui condições atuais e já encontra
+-se aguardando para ingressar com a presente ação há cerca
+d e um ano exatamente por ausência de condições de
+arcar com tais custas . Página 15 3. A citação
+do Estado do Rio de Janeiro, para contestar a presente
+ação, querendo, sob pena de revelia e confissão; 4. Julgue
+PROCEDENTE o pedido exordial para que: 4.1. - Seja o
+réu condenado ao pagamento indenizatório dos períodos de férias adquiridos
+e não gozados referentes aos exercícios de 1999 a 2013,
+na razão de 30 dias cada e referentes ao período
+de 2014 a 2017, na razão de 15 dias cada,
+pois gozadas parcialmente , tendo por base o ultimo vencimento
+do autor antes da aposentadoria, no valor de R$ 305.439,36
+(trezentos e cinco mil quatrocentos e trinta e nove reais
+e trinta e seis centavos ) corrigidos monetariamente a partir
+da data em que deveriam ter sidos pagos e, sobretudo
+acrescidos de juros legais . 4.2. - Seja o réu
+condenado ao pagamento indenizatório das licenças -prêmio não gozadas referentes
+aos 3º, 4º, 5º e 6º quinquênios decorridos entre 15/09/1996
+à 14/09/2016 , tendo por base o ultimo vencimento do
+autor antes da aposentadoria, no valor de R$ 229.079,52 (duzentos
+e vinte e nove mil setenta e nove reais e
+cinquenta e dois centavos) corrigidos monetariamente a partir da data
+em que deveriam ter sidos pagos e, sobretudo acrescidos de
+juros legais . 5. Seja o Réu condenado pagamento de
+custas e honorários de sucumbência nos termos da lei .
+Página 16 Declara que não possui interesse na designação da
+audiência de conciliação ou medi ação prevista no artigo 334
+do CPC. Protesta provar o alegado, por todos os meios
+de provas em direito admitidos, desde já pugnando pela juntada
+de novos documentos, caso pertinente. Dá-se à causa o valor
+de R$ 534.518,88 (quinhentos e trinta e quatro mil quinhentos
+e dezoito reais e oitent a e oito centavos ).
+Termos em que, Por questão de Justiça, Pede Deferimento. Rio
+de Janeiro , 13 de setembro de 2021 . DR.
+LAUDECI OLIVEIRA DA SILVA GONÇALVES OAB/RJ 183.922 JANAÍNA VALENTE BORGES
+BRAGA PIRES OAB/RJ 183.922
+2024-11-13 16:51:58,579 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 16:52:38,050 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 2470
+2024-11-13 16:52:38,052 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-09c30032-8c58-4e0a-910c-44b01b4c97a4', 'object': 'chat.completion', 'created': 1731527518, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'A petição apresentada é uma ação de cobrança de férias e licenças prêmios não gozadas que foi proposta pelo autor contra o Estado do Rio de Janeiro. Aqui estão os principais pontos contidos nessa petição:\n\n### 1. Introdução\n- **Nome do Autor:** Sebastião José dos Santos\n- **Identificação da Comarca e Varas:** Capital, Vara de Fazenda Pública\n- **Endereço do Autor:** Rua Francisco Xavier da Motta, nº 300, casa 01, Paineiras – Rio Bonito/RJ\n- **Representação:** Advogados Laudeci Oliveira da Silva Gonçalves e Janaina Valente Borges Pires\n\n### 2. Gratuidade de Justiça\n- O autor requer a gratuidade de justiça devido à sua situação financeira, incluindo quatro filhos, duas pensionistas, uma ex-esposa pensionista, esposa atual dependente financeiramente, despesas com escola e aluguel.\n\n### 3. Fatos\n- **Aposentadoria:** Aposentado em 03/07/2018.\n- **Férias:**\n  - Adquiriu 14 períodos de férias entre 1999 a 2013 (não gozadas)\n  - Gozou 5 períodos parciais em 2014 a 2017\n\n- **Licenças Prêmio:**\n  - Não gozou quatro licenças prêmio no período de 1996 a 2016.\n\n### 4. Direito e Fundamentos\n- **Férias:** Baseado em constituição (Art. 7º, XVII) e lei (Art. 77 da Lei nº 8.112/90).\n- **Licenças Prêmio:** Baseado na responsabilidade do Estado.\n\n### 5. Processo Jurídico\n- Requer a citação para contestar o pedido.\n- Solicita que o réu seja condenado a pagar as férias e licenças prêmios não gozadas, com valores atualizados monetariamente e juros legais.\n- Solicita que sejam deferidos os honorários sucumbenciais e custas judiciais.\n\n### 6. Provas\n- A petição finaliza pedindo a juntada de documentos que possam servir como prova do alegado, incluindo declarações da Administração e outras provas pertinentes.\n\n### 7. Valor Causa\nO autor solicita o valor total de R$ 534.518,88 (quinhentos e trinta e quatro mil quinhentos e dezoito reais e oitenta e oito centavos) para cobrir as férias e licenças prêmio não gozadas.\n\n### Conclusão\nO autor finalmente pugna pelo deferimento da petição, apresentando os pedidos conforme exposto na petição inicial.', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 8376, 'completion_tokens': 684, 'total_tokens': 9060}}
+2024-11-13 16:52:38,052 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-13 17:01:03,140 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 17:47:31,152 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 17:47:31,153 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 17:47:31,462 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 17:47:31,463 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 17:47:31,768 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 17:47:31,768 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 17:47:31,768 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 17:47:31,768 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 17:47:31,775 - DEBUG - Using proactor: IocpProactor
+2024-11-13 17:47:46,707 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 17:47:46,742 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 568
+2024-11-13 17:47:51,800 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 17:47:51,805 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 574
+2024-11-13 17:49:50,778 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 17:49:50,778 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 17:49:51,087 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 17:49:51,088 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 17:49:51,391 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 17:49:51,391 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 17:49:51,391 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 17:49:51,391 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 17:49:51,396 - DEBUG - Using proactor: IocpProactor
+2024-11-13 17:50:00,062 - DEBUG - Prompt recebido: o que tem no enunciado 47 da pge-rj?
+2024-11-13 17:50:00,062 - DEBUG - Prompt processado: o que tem no enunciado 47 da pge-rj?
+2024-11-13 17:50:00,064 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 17:50:31,195 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 1151
+2024-11-13 17:50:31,195 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-ce7550af-bd05-4104-b742-ea6999dd860b', 'object': 'chat.completion', 'created': 1731531000, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Para fornecer a informação correta sobre o enunciado 47 da PGE-RJ (Procuradoria Geral do Estado do Rio de Janeiro), seria necessário acessar os materiais oficiais ou normativos publicados pela própria instituição. Como assistente de inteligência artificial, eu não tenho acesso direto a documentos não públicos ou à internet em tempo real.\n\nNo entanto, se você puder fornecer mais detalhes sobre o enunciado 47, como a fonte específica onde foi retirada essa informação ou qualquer outro contexto relevante, eu posso tentar ajudar de outra maneira. Também é possível que haja um erro na referência e esse número não seja um enunciado real da PGE-RJ.\n\nSe você tiver acesso à norma ou documento original e precisar de uma análise ou interpretação, ficarei feliz em auxiliá-lo com base nas informações disponíveis.', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 45, 'completion_tokens': 197, 'total_tokens': 242}}
+2024-11-13 17:50:31,195 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-13 17:50:52,919 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 17:50:52,946 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 568
+2024-11-13 17:50:53,327 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 17:50:53,334 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 574
+2024-11-13 17:52:21,710 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 17:52:21,711 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 17:52:22,007 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 17:52:22,008 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 17:52:22,304 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 17:52:22,304 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 17:52:22,304 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 17:52:22,304 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 17:52:22,309 - DEBUG - Using proactor: IocpProactor
+2024-11-13 17:52:37,987 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 17:52:37,994 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 568
+2024-11-13 17:52:38,376 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 17:52:38,383 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 574
+2024-11-13 17:53:12,229 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 17:53:12,230 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 17:53:12,541 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 17:53:12,542 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 17:53:12,841 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 17:53:12,841 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 17:53:12,841 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 17:53:12,841 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 17:53:12,846 - DEBUG - Using proactor: IocpProactor
+2024-11-13 17:53:20,262 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 17:53:20,269 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 552
+2024-11-13 17:53:20,655 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 17:53:20,661 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 558
+2024-11-13 18:04:15,623 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:04:15,624 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:04:15,927 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:04:15,927 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:04:16,240 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:04:16,240 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 18:04:16,240 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:04:16,240 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 18:04:16,246 - DEBUG - Using proactor: IocpProactor
+2024-11-13 18:05:36,072 - DEBUG - Prompt recebido: ola
+2024-11-13 18:05:36,072 - DEBUG - Prompt processado: ola
+2024-11-13 18:05:36,074 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:05:36,831 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 339
+2024-11-13 18:05:36,831 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-6344d5ae-a5b0-42aa-9849-135951ab5a4c', 'object': 'chat.completion', 'created': 1731531936, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
+2024-11-13 18:05:36,831 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-13 18:05:48,334 - DEBUG - Prompt recebido: o que tem nessa petição 
+2024-11-13 18:05:48,336 - DEBUG - O PDF estava em base64.
+2024-11-13 18:05:48,578 - DEBUG - Prompt processado: o que tem nessa petição 
+
+Página 1 EXCELENTÍSSIMO SENHOR JUIZ DE DIREITO DA ___ VARA
+DE FAZENDA PÚBLICA DA COMARCA DA CAPITAL SEBASTIÃO JOSÉ DOS
+SANTOS , brasileiro, casado, aposentado, portador da cédula de identidade
+de n° 510914 -14-9, do IFP/RJ, inscrito no CPF sob
+o n° 444.682.707 -30, residente e domiciliado na Rua Francisco
+Xavier da Motta, nº 300, casa 01, Paineiras – Rio
+Bonito/RJ, CEP. 28.800 -000, não possui endereço eletrônico por seus
+advogados ad iante assinados que recebe as intimações em seu
+escritório sito Travessa Alexandre Ferreira, Lj . 16 – Centro
+– Rio Bonito/RJ , endereço eletrônico: laudeciadv@gmail.com , vem propor
+a presente AÇÃO DE COBRANÇA DE FÉRIAS E LICENÇAS PRÉMIOS
+NÃO GOZADAS em face do ESTADO DO RIO DE JANEIRO
+, na pessoa do Procurador Geral do Estado, com sede
+na Rua Dom Manuel no. 25, Centro, nesta cidade, pelos
+fatos e fundamentos que passa a expor: Página 2 DA
+GRATUIDADE DE JUSTIÇA Em que pese o autor possuir uma
+aposentadoria com valor significativo, o autor encontra -se em situação
+de insolvência cível mediante as diversas obrigações fixas que possui,
+quais sejam, quatro filh os, sendo 2 pensionistas e um
+menor impúbere, 1 ex esposa pensionista, uma esposa atual dependente
+financeira, despesas com escola de seu filho, aluguel, possui débitos
+com a receita federal e encontra -se com seu nome
+negativado, tudo conforme documentos a costados, os quais comprovam sua
+total incapacidade financeira para arcar com as despesas do presente
+processo. Diante do exposto, requer seja deferido o benefício d
+a gratuidade de justiça ao autor, eis que o mesmo
+não possui atualmente condições de arcar com as custas do
+process o sem prejuízo de seu sustento, de sua família
+e de seus dependentes, de acordo com o disposto pelo
+art. 5º, LXXIV, da CF, e pelo art. 98 e
+seguintes do CPC. Subsidiariamente , caso não seja este o
+entendimento do juízo, requer seja deferido o pagamento das custas
+ao final , a fim de evitar o evento da
+prescrição, já que o autor não possui condições atuais e
+já encontra -se aguardando para ingressar com a presente ação
+há cerca d e um ano exatamente por ausência de
+condições de arcar com tais custas DOS FATOS Página 3
+O Autor é servidor público aposentado, Especialista Legislativ o nível
+V, matricula 201 158 -3, aposentado a pedido em 03/07/2018
+através do Ato “E”/MD/Nº 2945/2018 publicado no D.O de 05/09/2018
+. 1. DAS FÉRIAS ADQUIRIDAS E NÃO GOZADAS O autor
+durante o tempo de atividade adquiriu mas não gozou qualquer
+período de férias referentes aos exercícios de 1999 a 2013
+, totalizando 14 férias não gozadas, bem como gozou de
+apenas 15 dias de férias referentes ao período de 2014
+a 2017 , totalizando 4 férias gozadas parcialmente, conforme declaração
+emitida pelo Diretor do Departamento de Administração de Pessoal ora
+acosta da. As férias são um direito Constitucional e uma
+obrigação do Estado em colocar o servidor de férias de
+30 (trinta) dias por cada ano trabalhado, até mesmo na
+hipótese em que o servidor não queira descansar, uma vez
+que as férias se tratam de direito irrenunciável, conforme se
+extrai do Art. 7º, XVII da CF: Art. 7º São
+direitos dos trabalhadores urbanos e rurais, além de outros que
+visem à melhoria de sua condição social: (...) XVII -
+gozo de férias anuais remuneradas com, pelo menos, um terço
+a mais do que o salário normal; Assim também reza
+o artigo 77 da Lei nº. 8.112/90: Página 4 Art.
+77. O servidor fará jus a trinta dias de férias,
+que podem ser acumuladas, até o máximo de dois períodos,
+no caso de necessidade do serviço, ressalvadas as hipóteses em
+qu e haja legislação específica. (Redação dada pela Lei nº
+9.525, de 10.12.97). Portanto, não restam dúvidas sobre a finalidade
+das férias. Elas são, em verdade, consequência e extensão natural
+das atividades profissionais, em relação íntima com a saúde men
+tal do trabalhador, para que este possa continuar desempenhando bem
+suas atribuições laborais. É pacífica a jurisprudência no sentido de
+que o servidor público aposentado tem direito ao recebimento de
+indenização pelas férias não gozadas, adquiridas ao tempo da atividade,
+sob pena de enriquecim ento sem causa da Administração, bem
+como que o direito de exigir a indenização nasce a
+partir da aposentadoria: Trata-se de ação em q ue o
+autor pretende o pagamento dos valores correspondentes à conversão em
+pecúnia das férias não gozadas, relativas aos anos de 2003,
+2004, 2005, 2006, 2007 e 2008. Contestação aduzindo, em síntese,
+inicialmente, a falta de interesse de agir. No mérito, alega
+a prescrição, a inconstitucionalidade do art. 97, XVII da Constituição
+do Estado do Rio de Janeiro, que trazia tal previsão
+e a observância do princípio da legalidade. Requer a improcedência
+dos pedidos. Sentença julgando procedente o pedido condenand o o
+Réu ao pagamento a título de ressarcimento pelas férias não
+gozadas, referentes aos períodos de 2003 a 2008. Recurso Inominado
+do réu objetivando a extinção do feito sem análise de
+mérito ou a reforma da sentença, para que o pedido
+seja julgado improce dente. O Ministério Público opinou pelo conhecimento
+do recurso e seu Página 5 não provimento. VOTO Inicialmente,
+rejeito a preliminar arguida pelo réu de falta de interesse
+de agir. Não é necessária a utilização da esfera administrativa
+precedentemente. Pelo dispo sto no art. 5º, XXXV, Constituição Federal,
+"a lei não excluirá da apreciação do Poder Judiciário, lesão
+ou ameaça de direito." No que tange ao mérito, deve
+ser ressaltado que não há previsão legal a respeito de
+indenização de férias não gozadas para os servidores sob regime
+estatutário, sendo assim, este dever foi construído pela jurisprudência sob
+a égide de diversos princípios e com base na responsabilidade
+civil do Estado. Vale mencionar que o direito de férias
+é assegurado, constitucionalmente, pelo ar t. 7º, inciso XVII. A
+CLT regula a matéria nos arts. 129 a 153. Este
+direito é aplicado a todos os empregados (rural e urbano),
+servidores públicos (art. 39, parágrafo 3º da CF), membros das
+forças armadas (art. 142, parágrafo 3º, inciso VIII da CF)
+e empr egados domésticos (art. 7, parágrafo único da CF).
+Também está consagrado no âmbito internacional pela OIT nas Convenções
+nºs 522, 1013 e 132. Como é notório, o direito
+a férias tem o objetivo de proporcionar ao trabalhador um
+tempo mais prolongado e neces sário de repouso. Essa pausa
+visa o ajuste do tempo de trabalho a padrões adequados
+de esforço/repouso, preservando, desta forma, a saúde do trabalhador e
+evitando, por conseguinte, eventuais enfermidades e acidentes de trabalho. O
+direito a férias e o seu efetivo desfrute, ademais de
+permitir o repouso e a recuperação dos desgastes físicos e
+psicológicos produzidos pela atividade laboral, buscam, entre suas finalidades, disponibilizar
+um maior convívio do trabalhador com sua família e com
+a comunidade na q ual está inserido. Quanto à alegação
+de prescrição a mesma não procede. De acordo com o
+entendimento pacificado tanto no âmbito do Tribunal de Justiça do
+Rio de Janeiro e do Superior Tribunal de Justiça, a
+contagem do prazo prescricional para pleitear a in denização relativa
+às férias não gozadas tem início com a Página 6
+aposentadoria do servidor. Logo, se aposentadoria ainda não ocorreu, não
+há que se falar em prescrição. Neste sentido os Acórdãos:
+2007.001.23184 - Apelação Cível nº. Décima Sexta Câmara Cível. Des.
+Mônica Costa de Pietro. Data do Julgamento: 17/07/2007AGRAVO INTERNO. AÇÃO
+INDENIZATÓRIA. FÉRIAS E LICENÇA -PRÊMIO NÃO GOZADAS. PRESCRIÇÃO QUINQUENAL INOCORRENTE.
+POSSIBILIDADE DE CONVERSÃO EM PECÚNIA DOS PERÍODOS NÃO GOZADOS. ISENÇÃO
+DE CUSTAS. HONORÁRIOS SOBRE O VALOR DA CONDENAÇÃO. Objetiva a
+reforma da decisão monocrática da relatora que negou seguimento ao
+recurso de apelação, mantendo a sentença de procedência do pedido.
+Trata -se de ação na qual alega o autor que
+se aposentou em março de 2002 no cargo de Titular
+de 1ª Categoria, índice 2000 do Tribunal de Justiça do
+Estado do Rio de Janeiro e que deixou de usufruir
+de 10 períodos de férias, pertinentes aos anos de 1972
+a 1981 e 10 dias do ano de 1982, além
+de não ter gozado 9 períodos de licença prêmio .
+Não há que se falar em prescrição. O direito do
+servidor de reivindicar o pagamento de indenização pelo serviço prestado
+ao ente público sem a contraprestação inicia -se com o
+ato de aposentadoria . O autor se aposentou no início
+do ano de 2002 e ajuizou a ação em 30/11/2005,
+não transcorreu o prazo prescricional qüinqüenal. Não gozou dos períodos
+de férias e de licença -prêmio a que tinha direito.
+A negativa de indenização de tais períodos constitui enriquecimento sem
+causa pelo ente público. Entendimento a ssente no STJ da
+possibilidade de conversão em pecúnia dos períodos de férias e
+licença -prêmios não gozadas, independentemente da existência de previsão legal,
+invocando o interesse público e na responsabilidade objetiva do Estado.
+Recurso improvido. 01233 34- 54.2009.8.19.0001 APELACAO - 1ª Ementa DES.
+LETICIA SARDAS Julgamento: 03/08/2010 - VIGESIMA CÂMARA CIVEL POLICIAL CIVIL
+FERIAS NAO GOZADAS DIREITO A INDENIZACAO PRINCIPIO DO NAO ENRIQUECIMENTO
+SEM CAUSA Página 7 "ADMINISTRATIVO. POLICIAL CIVIL. FÉRIAS VENCIDAS E
+NÃO GOZADAS. PRETENSÃO DE INDENIZAÇÃO. CABIMENTO. PRINCÍPIO DO NÃO ENRIQUECIMENTO
+SEM CAUSA. PRECEDENTES JURISPRUDENCIAIS. DESPROVIMENTO DO RECURSO. 1. Em que
+pese a possibilidade do indeferimento do pedido de férias do
+servidor público diante da imperio sa necessidade de serviço, tal
+situação não pode resultar na supressão desse direito, que, caso
+não exercido, deve ensejar compensação, de natureza pecuniária, sob pena
+de enriquecimento ilícito por parte do ente público. 2. A
+negativa do direito e a ausên cia da devida compensação
+pecuniária ofende o princípio contido no artigo 884 do Código
+Civil, que veda o enriquecimento sem causa. 3. Não há
+que se falar em prescrição do direito de se pleitear
+indenização das férias não gozadas, eis que seu termo a
+quo s e inicia apenas com a aposentadoria do servidor,
+o que não ocorreu na hipótese dos autos. 4. Desprovimento
+do apelo na forma do artigo 557, caput do CPC.
+(grifos nossos) A Administração Pública está regida pelo princípio da
+legalidade, artigo 37 da Constit uição da República. Tal princípio
+limita a atuação do administrador, que só pode fazer o
+que a lei permite. Assim, quanto ao pagamento de remuneração
+a servidores públicos, incluindo -se vencimentos e vantagens, impõe -se
+a observância ao disposto nos artigo s 169 inciso II
+e 37 inciso X ambos da Constituição da República, que
+determinam a existência de lei que estabeleça a remuneração do
+servidor. Apesar da declaração de inconstitucionalidade de parte do inciso
+XVII do artigo 77 da Constituição do Estado do R
+io de Janeiro, exatamente no tocante à possibilidade de transformar
+período de férias não gozadas em indenização, pelo STF na
+ADIN 227 -9, não se pode permitir que o servidor
+não usufrua do seu período de descanso e também não
+receba indenização pelo períod o trabalhado. Ademais, tampouco se justifica
+que o Estado se aproveite do trabalho de seus servidores,
+sem a devida contraprestação, pois se tal ocorresse agasalharíamos o
+denominado Página 8 enriquecimento ilícito. Deste modo, a pretensão deduzida
+não se funda no mencionado dispositivo, mas na indenização decorrente
+do corolário fundamental de Direito, segundo o qual é vedado
+o enriquecimento sem causa. Neste contexto, se a lei assegura
+ao servidor o gozo remunerado de férias, o seu impedimento
+pela Administração a bem do serviço público deve ser indenização,
+sob pena de locupletamento ilícito, violando -se, por conseguinte, o
+princípio da moralidade administrativa que deve nortear todos os atos
+praticados pela Administração . Saliente -se que o Tribunal de
+Justiça do Estado do Rio de Janeiro, firmou entendimento no
+sentido da possibilidade de conversão em pecúnia dos períodos de
+férias não gozadas, independentemente da existência de previsão legal, invocando
+o interesse público e na responsabilidade objetiva do Estado. Vejamos
+os Acórdãos: 0187050 -55.2009.8.19.0001 - APELACAO - 1ª Ementa, DES.
+ZELIA MARIA MACHADO - Julgamento: 31/03/2011 - QUINTA CÂMARA CIVEL
+ADMINISTRATIVO. Servidor público. Férias não gozadas a critério da administração.
+Prova. Pecúnia indenizatória. 1Pretensão a verba indenizatória em decorrência de
+férias não gozadas. Se a servidora fez prova de que
+não usufruiu férias por vontade da administração pública (art. 333
+I do CPC), impõe -se o pagamento da indenização, sob
+pena de enriquecimento ilícito. Di reito amparado no art. 7º
+inciso XVII c/c art. 39 § 3º da Constituição da
+República. Precedentes da Câmara.2 - Sentença mantida em reexame necessário.
+Apelação com seguimento negado pela relatora, na forma do art.
+557 do CPC. 0142690 -69.2008.8.19.0001 - APELACAO - 1ª Ementa,
+DES. MARIO GUIMARAES NETO Julgamento: 29/03/2011 - DECIMA SEGUNDA CÂMARA
+CIVEL - EMENTA: APELAÇÃO CÍVEL - DECISÃO MONOCRÁTICA INSPETOR DE
+POLÍCIA - FÉRIAS NÃO GOZADAS E NÃO REMUNERADAS - AUSÊNCIA
+DE LEGISLAÇAO PREVENDO INDENIZAÇÃO QUE NÃ O TEM O CONDÃO
+DE SUPRIMIR O ALUDIDO DIREITO QUANDO NÃO Página 9 GOZADAS
+AS FÉRIAS UTILIZAÇÃO DA FORÇA DE TRABALHO DURANTE AS FÉRIAS
+PRÁTICA QUE IMPLICA EM ENRIQUECIMENTO SEM CAUSA EM FAVOR DA
+ADMINISTRAÇÃO PÚBLICA - NEGATIVA DE SEGUIMENTO AO RECURSO (CPC, 557,
+CAP UT). 0280557 -70.2009.8.19.0001 - APELACAO - 1ª Ementa, DES.
+JACQUELINE MONTENEGRO - Julgamento: 01/02/2011 - DECIMA QUINTA CÂMARA CIVEL
+- DIREITO ADMINISTRATIVO - POLICIAL CIVIL. FÉRIAS NÃO GOZADAS. INDENIZAÇÃO.
+CABIMENTO. MANUTENÇÃO DA SENTENÇA. 1 - Apela do que objetiva
+indenização por férias não gozadas, por necessidade do serviço, referentes
+aos exercícios de 2003 a 2008.2 - A hipótese em
+questão visa indenizar o servidor, tendo em vista a indisponibilidade
+de direito constitucionalmente assegurado, não sendo o caso anteriormente previsto
+no artigo 77 da C.E., já que a conveniência não
+foi do servidor. Precedentes deste Tribunal e do STJ.3 -
+A utilização da força de trabalho no período de férias
+sem a devida remuneração redundaria em enriquecimento ilícit o do
+Estado.4 - Desprovimento do recurso 0269771 - 98.2008.8.19.0001 - APELACAO
+/ REEXAME NECESSARIO - 1ª Ementa, DES. CRISTINA TEREZA GAULIA
+- Julgamento: 01/02/2011 - QUINTA CÂMARA CIVEL APELAÇÃO. POLICIAL CIVIL.
+INDENIZAÇÃO DE FÉRIAS NÃO GOZADAS. NECESSID ADE DE SERVIÇO. PROVA
+NECESSÁRIA. Férias. Garantia fundamental do trabalhador extensiva aos servidores públicos.
+Aplicação dos arts. 7º, XVII c/c 39, § 3º, ambos
+da CF. Respeito à saúde física e mental do trabalhador.
+Possibilidade de restrição ao direito em razão da necessidade do
+serviço. Indenização devida, sob pena de enriquecimento indevido da administração.
+Inteligência do caput do art. 884 do CC. Jurisprudência do
+STF e do TJRJ. Prova de que as férias não
+teriam sido gozadas. Ônus do autor. Aplicação do art. 333,
+I do CPC. Jurisprudência do STJ e do TJRJ. Declaração
+do órgão público reconhecendo o não exercício do direito. Sentença
+de procedência. Manutenção. Mudança de posição Página 10 do Relator.
+Recurso a que se nega provimento. Pela análise do documento
+ju ntado pelo próprio recorrente, há o reconhecimento, de que
+o autor não gozou as férias nos anos de 2002,
+2003, 2004 e 2005. Logo, não restam dúvidas acerca do
+direito do autor. Todavia, assiste razão ao recorrente quanto ao
+argumento de que não há condenaç ão a título de
+honorários advocatícios em primeiro grau nos Juizados Especiais. O art.
+55 da Lei 9099/95 é claro ao dispor que: "A
+sentença de primeiro grau não condenará o vencido em custas
+e honorários de advogado, ressalvados os casos de litigância de
+má-fé. Em segundo grau, o recorrente, vencido, pagará as custas
+e honorários de advogado, que serão fixados entre dez por
+cento e vinte por cento do valor de condenação ou,
+não havendo condenação, do valor corrigido da causa." Do mesmo
+modo assiste razão ao recorrente, quanto ao percentual de juros
+a ser aplicado. No que tange ao índice aplicável ao
+caso, deve incidir o percentual de 0,5% ao mês, consoante
+o disposto no art. 1º -F da Lei nº 9.494/97,
+por se tratar de ação contra a Fazenda Pública, a
+fluir da citação. A partir de 29/06/2009, o cálculo da
+atualização monetária e da compensação de mora deve ocorrer nos
+moldes previstos no artigo 5º, da Lei nº 11.960/2009, que
+alterou a citada lei, para uniformizar a atualização monetária e
+dos juros incidentes so bre todas as condenações judiciais impostas
+à Fazenda Pública. Assim, necessária a reforma da sentença para
+excluir a condenação em honorários e aplicar o percentual de
+juros de 0,5% ao mês, de acordo com o disposto
+no art. 1º F da Lei nº 9.494/97. Desta f
+orma, encontrando -se presentes os requisitos de admissibilidade recursal, voto
+pelo conhecimento do recurso, dando -se parcial provimento ao mesmo.
+Sem custas face à isenção legal. Condeno o recorrente ao
+pagamento de honorários advocatícios, que fixo em R$ 270,00 (duzentos
+e setenta reais), de acordo o disposto no artigo 20,
+§ 4º do Código de Processo Civil, tomando -se como
+parâmetro o Enunciado nº 27 do Aviso nº 55/2009 do
+TJ/RJ. Página 11 (TJ-RJ - RI: 00463921020118190001 RJ 0046392 -
+10.2011.8.19.0001, Relator: LUI Z HENRIQUE OLIVEIRA MARQUES, Data de Julgamento:
+31/03/2011, Primeira Turma Recursal Fazendária, Data de Publicação: 11/06/2013 16:49)
+. Em 15/01/2018, Antes da aposentadoria, o autor chegou a
+requerer a concessão de tais férias, o que foi negado
+em março de 2018, e o autor requereu a indenização
+das mesmas, no entanto o pedido foi arquivado sem conclusão
+ou solução definitiva em 25/07/2019, conforme cópia do Processo nº
+466/208 acostada. Insta salientar que no mês anterior ao da
+sua aposentadoria, em abril de 2018, o autor encontra -se
+percebendo a remuneração de R$ 19.089,96, o que deve ser
+utilizado por base para fins de apuração do valor das
+férias e lincenças -prêmio. Diante do exposto, requer seja o
+réu condenado ao pagamento indenizatório dos períodos de férias adquiridos
+e não gozados referentes aos exercícios de 1999 a 2013
+, na razão de 30 dias cada e referentes ao
+período de 2014 a 2017 , na razão de 15
+dias cada, pois go zadas parcialmente, tendo por base o
+último vencimento do autor antes da aposentadoria , corrigidos monetariamente
+a partir da data em que deveriam ter sidos pagos
+e, sobretudo acrescidos de juros legais . 2. DAS LICENÇAS
+-PRÊMIOS NÃO GOZADAS Igualmente, o autor não gozou de 4
+(quatro ) licenças -prêmio , referentes aos 3º, 4º ,
+5º e 6º Página 12 quinquênios decorridos entre 15/09/1996 à
+14/09/2016 , conforme declaração acostada também emitida pelo Diretor do
+Departamento de Administração de Pessoal. Como se verifica dos julgados
+acima e respectivas jurisprudências transcritas, nossos Tribunais, igualmente, pacificaram o
+entendimento que é devido à indenização do período de licença
+prêmio não gozada na época própria, uma vez que admitir
+o contrário, import aria em dar ensejo ao enriquecimento ilícito
+da Administração. Assevera -se que indenização por férias e licença
+prêmio não gozadas além de reparar o dano material sofrido
+pela servidora, também tem por escopo compensar o dedicado servidor
+pelo tempo não usufruído para descanso e maior contato com
+a família em prol da coletividade, sendo configurada a Responsabilidade
+Civil do órgão público e devida a reparação nos moldes
+do art. 37 parágrafo 6º., da Constituição da República Federativa
+do Brasil. Art. 37. A administração pública direta e indireta
+de qualquer dos Poderes da União, dos Estados, do Distrito
+Federal e dos Municípios obedecerá aos princípios de legalidade, impessoalidade,
+moralidade, publicidade e eficiência e, também, ao seguinte: (...) §
+6º As pessoas jurídicas de direito público e as de
+direito privado prestadoras de serviços públicos responderão pelos danos que
+seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito
+de regresso contra o responsável nos casos de dolo ou
+culpa. Destaca -se que a indenização das férias e licença
+-prêmio não gozadas independe do motivo pelo qual o Página
+13 benefício não fora usufruído. Ainda que a permanência da
+servidora no trabalho não decorra de imposição da autoridade administrativa,
+subsiste o dever de indenizar, p ois a não interrupção
+das atividades sempre reverte em benefício da Administração. Portanto, calcados
+no pressuposto da responsabilidade objetiva do Estado, Administração tem o
+dever de indenizar os servidores pelos danos advindos da não
+fruição do direito de férias ou de licença -prêmio. Diante
+do exposto, requer seja o réu condenado ao pagamento indenizatório
+das licenças -prêmio não gozadas referentes aos 3º, 4º, 5º
+e 6º quinquênios decorridos entre 15/09/1996 à 14/09/2016 , tendo
+por base o ultimo venci mento do autor antes da
+aposentadoria, corrigidos monetariamente a partir da data em que deveriam
+ter sidos pagos e, sobretudo acrescidos de juros legais .
+DEMONSTRATIVO DAS VERBAS Último Vencimento: Abril de 2018. Valor Bruto:
+R$ 19.089,96. 1. Das Férias Períodos Integrais de Férias 14
+Valor Bruto R$ 267.259,44 Períodos parciais de Férias (15 dias)
+4 Valor Bruto R$ 38.170,82 Total R$ 305.439,36 Página 14
+2. Licença -Prêmio Quantidade de Licenças não Gozadas 4 Total
+de Meses 12 Valor Bruto R$ 229.079,52 DOS PEDIDOS Diante
+do exposto, o autor requer: 1. Diante do exposto, requer
+seja deferido o benefício d a gratuidade de justiça ao
+autor , eis que o mesmo não possui atualmente condições
+de arcar com as custas do process o sem prejuízo
+de seu sustento, de sua família e de seus dependentes
+, de acordo com o disposto pelo art. 5º, LXXIV,
+da CF, e pelo art. 98 e seguintes do CPC.
+2. Subsidiariamente , caso não seja este o entendimento do
+juízo, requer seja deferido o pagamento das custas ao final
+, a fim de evitar o evento da prescrição, já
+que o autor não possui condições atuais e já encontra
+-se aguardando para ingressar com a presente ação há cerca
+d e um ano exatamente por ausência de condições de
+arcar com tais custas . Página 15 3. A citação
+do Estado do Rio de Janeiro, para contestar a presente
+ação, querendo, sob pena de revelia e confissão; 4. Julgue
+PROCEDENTE o pedido exordial para que: 4.1. - Seja o
+réu condenado ao pagamento indenizatório dos períodos de férias adquiridos
+e não gozados referentes aos exercícios de 1999 a 2013,
+na razão de 30 dias cada e referentes ao período
+de 2014 a 2017, na razão de 15 dias cada,
+pois gozadas parcialmente , tendo por base o ultimo vencimento
+do autor antes da aposentadoria, no valor de R$ 305.439,36
+(trezentos e cinco mil quatrocentos e trinta e nove reais
+e trinta e seis centavos ) corrigidos monetariamente a partir
+da data em que deveriam ter sidos pagos e, sobretudo
+acrescidos de juros legais . 4.2. - Seja o réu
+condenado ao pagamento indenizatório das licenças -prêmio não gozadas referentes
+aos 3º, 4º, 5º e 6º quinquênios decorridos entre 15/09/1996
+à 14/09/2016 , tendo por base o ultimo vencimento do
+autor antes da aposentadoria, no valor de R$ 229.079,52 (duzentos
+e vinte e nove mil setenta e nove reais e
+cinquenta e dois centavos) corrigidos monetariamente a partir da data
+em que deveriam ter sidos pagos e, sobretudo acrescidos de
+juros legais . 5. Seja o Réu condenado pagamento de
+custas e honorários de sucumbência nos termos da lei .
+Página 16 Declara que não possui interesse na designação da
+audiência de conciliação ou medi ação prevista no artigo 334
+do CPC. Protesta provar o alegado, por todos os meios
+de provas em direito admitidos, desde já pugnando pela juntada
+de novos documentos, caso pertinente. Dá-se à causa o valor
+de R$ 534.518,88 (quinhentos e trinta e quatro mil quinhentos
+e dezoito reais e oitent a e oito centavos ).
+Termos em que, Por questão de Justiça, Pede Deferimento. Rio
+de Janeiro , 13 de setembro de 2021 . DR.
+LAUDECI OLIVEIRA DA SILVA GONÇALVES OAB/RJ 183.922 JANAÍNA VALENTE BORGES
+BRAGA PIRES OAB/RJ 183.922
+2024-11-13 18:05:48,580 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:06:33,987 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 2731
+2024-11-13 18:06:33,992 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-aa874ef4-3065-4b6e-a6f5-ffd3157e3761', 'object': 'chat.completion', 'created': 1731531948, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Esta petição apresenta uma ação de cobrança de férias e licenças-prêmio não gozadas contra o Estado do Rio de Janeiro. Vamos destacar os principais pontos:\n\n### 1. Identificação das Pessoas\n- **Autor**: Sebastião José dos Santos, aposentado e residente no Rio Bonito/RJ.\n- **Advogados do Autor**: Dra. Laudeci Oliveira da Silva Gonçalves (OAB/RJ 183.922) e Dra. Janaína Valente Borges Braga Pires (OAB/RJ 183.922).\n- **Réu**: Estado do Rio de Janeiro, representado pelo Procurador Geral.\n\n### 2. Petição Inicial\n**a) Gratuidade de justiça**\n   - Requerimento para a concessão da gratuidade de justiça, devido à insolvência financeira do autor.\n  \n**b) Fatos e Fundamentos**\n   - O autor é servidor público aposentado com vencimentos significativos, mas que tem diversas despesas (quatro filhos, ex-esposa pensionista, esposa dependente, etc.) e encontra-se inscrito em débitos devido à situação financeira crítica.\n   \n**c) Demanda**\n   - O autor busca o pagamento indenizatório pelas férias não gozadas (14 períodos) e licenças-prêmio (4 períodos).\n  \n### 3. Solicitações\n- **a)** Gratuidade de justiça ou custas pagas no final do processo para evitar a prescrição.\n- **b)** Citação do réu para contestar o pedido, sob pena de revelia e confissão.\n\n### 4. Pedidos\n1. **Indenização por férias não gozadas**:\n   - Períodos integrais (1999 a 2013) = 30 dias cada\n   - Períodos parciais (2014 a 2017) = 15 dias cada\n   - Baseado no último vencimento do autor antes da aposentadoria: R$ 305.439,36.\n  \n2. **Indenização por licenças-prêmio não gozadas**:\n   - Quinquênios de 1996 a 2016 = 12 meses\n   - Baseado no último vencimento do autor antes da aposentadoria: R$ 229.079,52.\n  \n3. **Custas e honorários sucumbenciais**.\n\n### 5. Valor do Causa\nO valor declarado pela causa é de R$ 534.518,88 (quinhentos e trinta e quatro mil quinhentos e oitenta reais e oitenta e oito centavos).\n\n### 6. Pedido Final\n- Pedido de deferimento do benefício da gratuidade de justiça ou custas pagas no final.\n- Citação do réu para contestar o pedido.\n\n### 7. Prova\nO autor pugna pela juntada de novos documentos, caso pertinente.\n\n### Resumo\nA petição reúne elementos fundamentais para uma ação de cobrança de férias e licenças-prêmio não gozadas por um servidor público que está em situação financeiramente delicada.', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 8376, 'completion_tokens': 777, 'total_tokens': 9153}}
+2024-11-13 18:06:33,992 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-13 18:10:32,691 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:10:32,783 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 566
+2024-11-13 18:10:33,235 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:10:33,241 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 572
+2024-11-13 18:12:41,788 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:12:41,788 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:12:42,089 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:12:42,090 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:12:42,388 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:12:42,388 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 18:12:42,388 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:12:42,388 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 18:12:42,393 - DEBUG - Using proactor: IocpProactor
+2024-11-13 18:12:48,427 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:12:48,433 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 565
+2024-11-13 18:12:48,831 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:12:48,838 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 571
+2024-11-13 18:13:59,748 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:13:59,749 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:14:00,054 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:14:00,055 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:14:00,355 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:14:00,355 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 18:14:00,355 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:14:00,355 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 18:14:00,361 - DEBUG - Using proactor: IocpProactor
+2024-11-13 18:15:09,796 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:15:09,797 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:15:10,094 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:15:10,094 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:15:10,393 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:15:10,393 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 18:15:10,394 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:15:10,394 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 18:15:10,400 - DEBUG - Using proactor: IocpProactor
+2024-11-13 18:15:26,119 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:15:26,126 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 565
+2024-11-13 18:15:59,591 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:15:59,592 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:15:59,898 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:15:59,898 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:16:00,203 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:16:00,203 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 18:16:00,203 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:16:00,203 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 18:16:00,208 - DEBUG - Using proactor: IocpProactor
+2024-11-13 18:16:03,315 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:16:03,330 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 565
+2024-11-13 18:16:34,494 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:16:34,501 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 571
+2024-11-13 18:16:56,651 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:16:56,651 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:16:56,950 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:16:56,951 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:16:57,250 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:16:57,250 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 18:16:57,250 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:16:57,250 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 18:16:57,256 - DEBUG - Using proactor: IocpProactor
+2024-11-13 18:17:01,491 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:17:01,498 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 565
+2024-11-13 18:17:32,109 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:17:32,121 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 571
+2024-11-13 18:17:36,272 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:17:36,273 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:17:36,573 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:17:36,574 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:17:36,872 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:17:36,872 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 18:17:36,872 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:17:36,872 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 18:17:36,877 - DEBUG - Using proactor: IocpProactor
+2024-11-13 18:17:42,120 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:17:42,130 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 537
+2024-11-13 18:18:13,302 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:18:13,308 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 571
+2024-11-13 18:20:12,886 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:20:12,886 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:20:13,192 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:20:13,193 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:20:13,504 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:20:13,504 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 18:20:13,504 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:20:13,504 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 18:20:13,511 - DEBUG - Using proactor: IocpProactor
+2024-11-13 18:20:16,617 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:20:16,624 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 565
+2024-11-13 18:20:47,889 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:20:47,895 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 500 571
+2024-11-13 18:23:19,159 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:23:19,160 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:23:19,464 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:23:19,464 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:23:19,767 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:23:19,767 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 18:23:19,767 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:23:19,767 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 18:23:19,772 - DEBUG - Using proactor: IocpProactor
+2024-11-13 18:26:26,044 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:26:27,453 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 399
+2024-11-13 18:26:30,126 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:26:30,730 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 388
+2024-11-13 18:26:34,526 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:26:34,527 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:26:34,827 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:26:34,828 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:26:35,130 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:26:35,130 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 18:26:35,130 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:26:35,130 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 18:26:35,135 - DEBUG - Using proactor: IocpProactor
+2024-11-13 18:26:39,335 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:26:40,385 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 399
+2024-11-13 18:27:11,598 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:27:15,285 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 672
+2024-11-13 18:28:27,889 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:28:27,889 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:28:28,188 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:28:28,189 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:28:28,487 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:28:28,487 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 18:28:28,487 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:28:28,487 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 18:28:28,492 - DEBUG - Using proactor: IocpProactor
+2024-11-13 18:29:33,559 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:29:34,491 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 399
+2024-11-13 18:29:37,373 - DEBUG - Starting new HTTPS connection (1): pge.rj.gov.br:443
+2024-11-13 18:29:37,590 - DEBUG - https://pge.rj.gov.br:443 "GET /entendimentos/enunciados HTTP/1.1" 200 82886
+2024-11-13 18:29:37,649 - DEBUG - Starting new HTTPS connection (1): pge.rj.gov.br:443
+2024-11-13 18:29:37,825 - DEBUG - https://pge.rj.gov.br:443 "GET /entendimentos/ HTTP/1.1" 200 12735
+2024-11-13 18:29:37,835 - DEBUG - Starting new HTTPS connection (1): pge.rj.gov.br:443
+2024-11-13 18:29:37,975 - DEBUG - https://pge.rj.gov.br:443 "GET /comum/code/MostrarArquivo.php?C=MTM5MDQ%2C HTTP/1.1" 200 554686
+2024-11-13 18:29:39,143 - DEBUG - Encoding detection: Unable to determine any suitable charset.
+2024-11-13 18:29:39,242 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:29:51,238 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 591
+2024-11-13 18:29:51,240 - DEBUG - Prompt recebido: qual é o enunciado 47 da pge-rj?
+2024-11-13 18:29:51,240 - DEBUG - Prompt processado: qual é o enunciado 47 da pge-rj?
+2024-11-13 18:29:51,241 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:29:57,467 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 1182
+2024-11-13 18:29:57,468 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-d2b0febd-2a05-4913-b1f2-6bfba7c8d42c', 'object': 'chat.completion', 'created': 1731533391, 'model': 'C:/Users/mmnal/Documents/LLMS/Qwen2.5-7B-Instruct.Q4_K_S.gguf', 'choices': [{'index': 0, 'message': {'content': 'Peço desculpas, mas não tenho informações específicas sobre o enunciado 47 da PGE-RJ (Procuradoria Geral do Estado do Rio de Janeiro) sem mais contexto. As redações dos enunciados podem variar em diferentes períodos e\u53ef\u4ee5\u6839\u636e\u4f60\u7684\u95ee\u9898\uff0c\u6211\u9700\u8981\u6307\u51fa\uff0cPGE-RJ\uff08\u5df4\u897f\u91cc\u7ea6\u70ed\u5185\u5362\u5dde\u603b\u68c0\u5bdf\u957f\u529e\u516c\u5ba4\uff09\u53d1\u5e03\u7684\u5177\u4f53\u58f0\u660e\u6216\u6cd5\u5f8b\u6587\u4ef6\u5185\u5bb9\u901a\u5e38\u662f\u4e0d\u516c\u5f00\u7684\uff0c\u6216\u8005\u81f3\u5c11\u4e0d\u662f\u901a\u8fc7\u901a\u7528\u67e5\u8be2\u80fd\u591f\u76f4\u63a5\u83b7\u53d6\u5230\u7684\u3002\u5982\u679c\u4f60\u662f\u5728\u51c6\u5907\u53f8\u6cd5\u8003\u8bd5\u6216\u662f\u76f8\u5173\u6cd5\u5f8b\u57f9\u8bad\uff0c\u5efa\u8bae\u4f60\u53c2\u8003\u5b98\u65b9\u53d1\u5e03\u7684\u6700\u65b0\u7248\u672c\u7684\u9898\u5e93\u6216\u8005\u662f\u54a8\u8be2\u76f8\u5173\u7684\u6cd5\u5f8b\u6559\u80b2\u673a\u6784\u4ee5\u83b7\u5f97\u51c6\u786e\u7684\u4fe1\u606f\u3002\n\n\u5982\u679c\u4f60\u6709\u5177\u4f53\u7684\u6cd5\u5f8b\u95ee\u9898\u6216\u662f\u9700\u8981\u4e86\u89e3\u67d0\u9879\u7279\u5b9a\u653f\u7b56\u3001\u58f0\u660e\u7684\u5185\u5bb9\uff0c\u63d0\u4f9b\u66f4\u591a\u7684\u80cc\u666f\u4fe1\u606f\uff0c\u6211\u4f1a\u5c3d\u529b\u6839\u636e\u6211\u6240\u638c\u63e1\u7684\u77e5\u8bc6\u548c\u8d44\u6e90\u4e3a\u4f60\u63d0\u4f9b\u5e2e\u52a9\u3002', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 44, 'completion_tokens': 173, 'total_tokens': 217}}
+2024-11-13 18:29:57,474 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-13 18:31:07,657 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:31:07,658 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:31:07,955 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-13 18:31:07,956 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-13 18:31:08,255 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:31:08,255 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-13 18:31:08,255 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-13 18:31:08,255 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-13 18:31:08,260 - DEBUG - Using proactor: IocpProactor
+2024-11-13 18:31:16,139 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:31:17,041 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 399
+2024-11-13 18:31:20,426 - DEBUG - Starting new HTTPS connection (1): pge.rj.gov.br:443
+2024-11-13 18:31:20,624 - DEBUG - https://pge.rj.gov.br:443 "GET /entendimentos/enunciados HTTP/1.1" 200 82886
+2024-11-13 18:31:20,680 - DEBUG - Starting new HTTPS connection (1): pge.rj.gov.br:443
+2024-11-13 18:31:20,839 - DEBUG - https://pge.rj.gov.br:443 "GET /entendimentos/ HTTP/1.1" 200 12735
+2024-11-13 18:31:20,848 - DEBUG - Starting new HTTPS connection (1): portal.fazenda.rj.gov.br:443
+2024-11-13 18:31:21,016 - DEBUG - https://portal.fazenda.rj.gov.br:443 "GET /tecnologia-informacao/legislacao/enunciados/ HTTP/1.1" 200 None
+2024-11-13 18:31:21,046 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:31:28,177 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 816
+2024-11-13 18:31:28,178 - DEBUG - Prompt recebido: qual é o enunciado 47 da pge-rj?
+2024-11-13 18:31:28,179 - DEBUG - Prompt processado: qual é o enunciado 47 da pge-rj?
+2024-11-13 18:31:28,179 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-13 18:31:36,207 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 1279
+2024-11-13 18:31:36,207 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-6887f7b1-47dd-4fb3-8b21-11f1770848e2', 'object': 'chat.completion', 'created': 1731533488, 'model': 'C:/Users/mmnal/Documents/LLMS/Qwen2.5-7B-Instruct.Q4_K_S.gguf', 'choices': [{'index': 0, 'message': {'content': 'Infelizmente, não tenho acesso a documentos específicos ou bancos de questões em tempo real. Portanto, não posso fornecer o enunciado exato da questão 47 da PGE-RJ (Procuradoria Geral do Estado do Rio de Janeiro) sem mais contexto.\n\nA Procuradoria Geral do Estado do Rio de Janeiro é conhecida por realizar concursos muito competitivos. As questões costumam abordar diversos temas, mas para encontrar a questão específica que você menciona, seria necessário:\n\n1. Acesso a bancos de perguntas anteriores (geralmente disponíveis em sites especializados ou livros).\n2. Consulta a professores especializados no conteúdo da PGE-RJ.\n3. Pesquisa na própria página do Instituto responsável pelo concurso ou na PGE-RJ.\n\nSe você precisar de ajuda com o tema geral das questões que costumam aparecer, posso tentar fornecer informações gerais sobre os tipos de questões comuns em concursos para cargos da PGE.', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 44, 'completion_tokens': 222, 'total_tokens': 266}}
+2024-11-13 18:31:36,207 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-18 19:48:23,307 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 19:48:23,308 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 19:48:23,627 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 19:48:23,628 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 19:48:23,937 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-18 19:48:23,937 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-18 19:48:23,937 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-18 19:48:23,937 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-18 19:48:23,944 - DEBUG - Using proactor: IocpProactor
+2024-11-18 19:51:22,760 - DEBUG - Prompt recebido: oi
+2024-11-18 19:51:22,760 - DEBUG - Prompt processado: oi
+2024-11-18 19:51:22,765 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 19:51:24,089 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 386
+2024-11-18 19:51:24,089 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-a4dfd15e-25fd-48a8-b251-83fc10800636', 'object': 'chat.completion', 'created': 1731970282, 'model': 'C:/Users/mmnal/Documents/LLMS/Qwen2.5-7B-Instruct.Q4_K_S.gguf', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
+2024-11-18 19:51:24,089 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
