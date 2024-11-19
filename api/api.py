@@ -11,15 +11,15 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Permite todas as origens. Ajuste conforme necessário.
+    allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=["*"],  # Permite todos os métodos HTTP
-    allow_headers=["*"],  # Permite todos os cabeçalhos
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
-api_key = "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"
-groq_chatbot = GroqChat(api_key=api_key)
-llama3_sync = LlamaChat('http://localhost:8000/v1/chat/completions')
+
+groq_chatbot = GroqChat()
+llama3_sync = LlamaChat()
 
 class PromptRequest(BaseModel):
     prompt: str
@@ -58,7 +58,8 @@ async def process_request(request: PromptRequest, chatbot):
 
     return {
         "prompt": request.prompt,
-        "response": web_response or response
+        "response": web_response or response,
+        "links": ["https://link1.com", "https://link2.com"]
     }
 
 @app.post("/groq_chat")

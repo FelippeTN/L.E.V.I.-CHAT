@@ -3,11 +3,9 @@ from bs4 import BeautifulSoup
 from groq import Groq
 import requests
 import json
-import asyncio
 import textwrap
 
-api_key = "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"
-client = Groq(api_key=api_key)
+client = Groq()
 url_llama = 'http://localhost:8000/v1/chat/completions'
 
 def gerar_termos_busca(prompt_usuario: str) -> str:
@@ -128,7 +126,7 @@ def bing_search(resultados_extracao, prompt_user: str):
                 "messages": [
                     { 
                         "role": "system",
-                        "content": "Você é um assistente que responde sempre em JSON.",
+                        "content": "Você é um BOT assistente",
                     },
                     { 
                         "role": "user",

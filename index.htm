@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat with Groq API</title>
+    <title>L.E.V.I CHAT</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -142,12 +142,13 @@
             <button onclick="sendMessage()">Enviar</button>
         </div>
     </div>
+    
 
     <script>
 
         const base_url = 'http://localhost:8001'; // llama-server
 
-        const url = `${base_url}/llama_chat`;  //groq_chat
+        const url = `${base_url}/llama_chat`;
 
         const textarea = document.getElementById('userInput');
         const fileInput = document.getElementById('fileInput');
@@ -227,7 +228,7 @@
             fetch(url, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
 
                 },
                 body: JSON.stringify(requestBody),
@@ -286,6 +287,45 @@
                 reader.readAsDataURL(file);
             });
         }
+
+    // Função para converter texto em fala
+    function speak(text) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'pt-BR';
+        window.speechSynthesis.speak(utterance);
+    }
+
+    function typeMessage(text, sender) {
+        const messageContainer = document.createElement('div');
+        messageContainer.classList.add('message', sender);
+        document.getElementById('messages').appendChild(messageContainer);
+
+        let i = 0;
+        const typingSpeed = 25; // Velocidade de digitação em ms
+
+        function type() {
+            if (i < text.length) {
+                if (text.charAt(i) === '\n') {
+                    messageContainer.innerHTML += '<br>'; // Quebra de linha
+                } else {
+                    messageContainer.innerHTML += text.charAt(i);
+                }
+                i++;
+                scrollToBottom(); // Atualizar rolagem conforme digita
+                setTimeout(type, typingSpeed);
+            } else if (sender === 'bot') {
+                // Adicionar o ícone de som após a mensagem ser digitada
+                const soundIcon = document.createElement('i');
+                soundIcon.className = 'fa-solid fa-volume-high';
+                soundIcon.style.cursor = 'pointer';
+                soundIcon.style.marginLeft = '10px';
+                soundIcon.title = 'Ouvir resposta';
+                soundIcon.onclick = () => speak(text);
+                messageContainer.appendChild(soundIcon);
+            }
+        }
+        type();
+    }
     </script>
 </body>
 

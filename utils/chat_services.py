@@ -5,9 +5,6 @@ import fitz  # PyMuPDF
 from PIL import Image
 import pytesseract
 from langchain.schema import Document
-import re
-import http.client
-from urllib.parse import urlparse
 
 class PDFProcessor:
     def __init__(self, words_per_line=10):
@@ -38,35 +35,28 @@ class PDFProcessor:
                 text = pytesseract.image_to_string(roi)
             texto_inicial += text + "\n"
 
-        # Quebra as linhas a cada 'words_per_line' palavras
         words = texto_inicial.split()
         formatted_text = ""
         for i in range(0, len(words), self.words_per_line):
             formatted_text += ' '.join(words[i:i + self.words_per_line]) + '\n'
 
-        langchain_document = [
-            Document(page_content=formatted_text.strip(), metadata={"source": "base64_input"})
-        ]
-        return langchain_document
+        return [Document(page_content=formatted_text.strip(), metadata={"source": "base64_input"})]
 
-    # Lê o arquivo PDF e codifica em base64
     def pdf_to_base64(self, file_path: str) -> str:
         with open(file_path, "rb") as pdf_file:
-            pdf_binary = pdf_file.read()
-            return base64.b64encode(pdf_binary).decode('utf-8')
+            return base64.b64encode(pdf_file.read()).decode('utf-8')
 
 
-#inicializar a classe de processar prompt
 class PromptProcessor:
+    """ Tratar o texto extraído do PDF para melhor formatação no prompt"""
+    
     def __init__(self):
         self.pdf_processor = PDFProcessor()
 
     def process_prompt(self, prompt: str, pdf_base64: str = None) -> str:
-        # Checa se um PDF base64 foi fornecido
         if pdf_base64:
             document = self.pdf_processor.extract_document(pdf_base64)
             extracted_text = "\n".join([doc.page_content for doc in document])
-            prompt += f"\n\n{extracted_text}"  # Adiciona o texto do PDF abaixo do prompt, com uma linha de separação
+            prompt += f"\n\n{extracted_text}"
 
-        # Retorna a string formatada
         return prompt

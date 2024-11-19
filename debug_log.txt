@@ -1186,3 +1186,279 @@ BRAGA PIRES OAB/RJ 183.922
 2024-11-18 19:51:24,089 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 386
 2024-11-18 19:51:24,089 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-a4dfd15e-25fd-48a8-b251-83fc10800636', 'object': 'chat.completion', 'created': 1731970282, 'model': 'C:/Users/mmnal/Documents/LLMS/Qwen2.5-7B-Instruct.Q4_K_S.gguf', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
 2024-11-18 19:51:24,089 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-18 20:11:29,258 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 20:11:29,258 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 20:11:29,567 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 20:11:29,568 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 20:11:29,876 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-18 20:11:29,876 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-18 20:11:29,876 - DEBUG - ////////////////////////////// INIT //////////////////////////////////////////////
+2024-11-18 20:11:29,876 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-18 20:11:29,882 - DEBUG - Using proactor: IocpProactor
+2024-11-18 20:13:06,929 - DEBUG - Prompt recebido: oi
+2024-11-18 20:13:06,929 - DEBUG - Prompt processado: oi
+2024-11-18 20:13:06,934 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:13:07,528 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 386
+2024-11-18 20:13:07,528 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-17a3ee03-896c-468c-8454-72b3915fca65', 'object': 'chat.completion', 'created': 1731971586, 'model': 'C:/Users/mmnal/Documents/LLMS/Qwen2.5-7B-Instruct.Q4_K_S.gguf', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
+2024-11-18 20:13:07,528 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-18 20:16:40,907 - DEBUG - Prompt recebido: oi
+2024-11-18 20:16:40,907 - DEBUG - Prompt processado: oi
+2024-11-18 20:16:40,908 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:16:41,482 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 386
+2024-11-18 20:16:41,482 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-3b25645d-db90-4e35-b7fb-9b6dbeea28ce', 'object': 'chat.completion', 'created': 1731971800, 'model': 'C:/Users/mmnal/Documents/LLMS/Qwen2.5-7B-Instruct.Q4_K_S.gguf', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
+2024-11-18 20:16:41,482 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-18 20:16:52,439 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:16:53,075 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 382
+2024-11-18 20:17:04,715 - DEBUG - Starting new HTTPS connection (1): www.oi.com.br:443
+2024-11-18 20:17:04,872 - DEBUG - https://www.oi.com.br:443 "GET /minha-oi/ HTTP/1.1" 200 None
+2024-11-18 20:17:04,908 - DEBUG - Starting new HTTPS connection (1): www.oi.com.br:443
+2024-11-18 20:17:04,958 - DEBUG - https://www.oi.com.br:443 "GET /minha-oi/segunda-via/ HTTP/1.1" 200 None
+2024-11-18 20:17:04,987 - DEBUG - Starting new HTTPS connection (1): www2.oi.com.br:443
+2024-11-18 20:17:05,080 - DEBUG - Starting new HTTPS connection (1): fibra.oiplano.com.br:443
+2024-11-18 20:17:05,209 - DEBUG - https://fibra.oiplano.com.br:443 "GET /atendimento-oi-fibra/minha-oi HTTP/1.1" 200 None
+2024-11-18 20:17:05,245 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:17:26,459 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 2322
+2024-11-18 20:17:26,463 - DEBUG - Prompt recebido: oi
+2024-11-18 20:17:26,463 - DEBUG - Prompt processado: oi
+2024-11-18 20:17:26,463 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:17:26,917 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 386
+2024-11-18 20:17:26,917 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-354f1041-a01d-415a-bee1-5c40c41a2a1f', 'object': 'chat.completion', 'created': 1731971846, 'model': 'C:/Users/mmnal/Documents/LLMS/Qwen2.5-7B-Instruct.Q4_K_S.gguf', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
+2024-11-18 20:17:26,917 - DEBUG - ////////////////////////////// END //////////////////////////////////////////////
+2024-11-18 20:30:05,537 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-18 20:30:42,203 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-18 20:30:54,123 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-18 20:32:57,157 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-18 20:32:57,157 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 20:32:57,158 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 20:32:57,468 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-18 20:33:12,626 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-18 20:33:12,626 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 20:33:12,627 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 20:33:12,931 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-18 20:33:12,931 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-18 20:33:12,940 - DEBUG - Using proactor: IocpProactor
+2024-11-18 20:33:19,120 - DEBUG - Prompt recebido: oi
+2024-11-18 20:33:19,120 - DEBUG - Prompt processado: oi
+2024-11-18 20:33:19,126 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:33:19,882 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 339
+2024-11-18 20:33:19,882 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-a750b9d2-a784-4347-a7f5-d429e1eb4582', 'object': 'chat.completion', 'created': 1731972799, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
+2024-11-18 20:34:37,099 - DEBUG - Prompt recebido: Você é um assistente que responde sempre em JSON.Transforme o seguinte pedido do usuário em termos otimizados para uma busca em mecanismos de busca: 'Trump foi eleito nos estados unidos?' Responda com uma linha contendo apenas os termos mais relevantes (termos_relevantes).
+2024-11-18 20:34:37,099 - DEBUG - Prompt processado: Você é um assistente que responde sempre em JSON.Transforme o seguinte pedido do usuário em termos otimizados para uma busca em mecanismos de busca: 'Trump foi eleito nos estados unidos?' Responda com uma linha contendo apenas os termos mais relevantes (termos_relevantes).
+2024-11-18 20:34:37,100 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:34:37,970 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 360
+2024-11-18 20:34:37,970 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-94a2a759-d587-4e20-8341-98b3ac1b8993', 'object': 'chat.completion', 'created': 1731972877, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': '{"termos_relevantes":"Trump eleito Estados Unidos"}', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 97, 'completion_tokens': 13, 'total_tokens': 110}}
+2024-11-18 20:35:21,266 - DEBUG - Prompt recebido: Você é um assistente que responde sempre em JSON.
+                    Responda assim: 'De acordo com a extração da Web:', e explique o texto de acordo com a pergunta do usuario. 
+                    Pergunta do usuario:Trump foi eleito nos estados unidos?.
+                    Texto extraido da web: []
+2024-11-18 20:35:21,267 - DEBUG - Prompt processado: Você é um assistente que responde sempre em JSON.
+                    Responda assim: 'De acordo com a extração da Web:', e explique o texto de acordo com a pergunta do usuario. 
+                    Pergunta do usuario:Trump foi eleito nos estados unidos?.
+                    Texto extraido da web: []
+2024-11-18 20:35:21,267 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:35:25,228 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 718
+2024-11-18 20:35:25,229 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-5bc3c52e-5bcc-495f-abaa-fa903758ea92', 'object': 'chat.completion', 'created': 1731972921, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': '```json\n{\n  "resposta": {\n    "pergunta_usuario": "Trump foi eleito nos Estados Unidos?",\n    " resposta_baseada_na_web": "De acordo com a extração da Web: Não há dados suficientes para responder à pergunta. A lista de fontes extratas está vazia.",\n    "observacao": "É recomendável verificar informações adicionais em fontes confiáveis para obter uma resposta precisa."\n  }\n}\n```', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 98, 'completion_tokens': 96, 'total_tokens': 194}}
+2024-11-18 20:35:25,230 - DEBUG - Prompt recebido: Trump foi eleito nos estados unidos?
+2024-11-18 20:35:25,230 - DEBUG - Prompt processado: Trump foi eleito nos estados unidos?
+2024-11-18 20:35:25,231 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:35:35,666 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 1312
+2024-11-18 20:35:35,667 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-13ce484a-df01-4803-b5e2-527fe51e9512', 'object': 'chat.completion', 'created': 1731972925, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Sim, Donald Trump foi eleito Presidente dos Estados Unidos em 2016. Ele venceu as eleições presidenciais de 2016 contra a então senadora pelo Vermont, Bernie Sanders (que representava o partido socialista) e mais notavelmente contra Hillary Clinton, da Dinamarca, que era a candidata do Partido Democrata.\n\nNo dia 8 de novembro de 2016, Trump venceu as eleições populares no Estado da Flórida e alguns outros estados-chave, o suficiente para alcançar os 303 electoral votes necessários para se tornar Presidente. Ele tomou posse em 20 de janeiro de 2017.\n\nÉ importante notar que apesar do grande apoio popular inicial, a eleição foi controversa e teve muitos desafios legais e controvérsias envolvendo fraudes e manipulações. No entanto, todas as contestações não resultaram em mudanças no resultado final da eleição presidencial de 2016.\n\nTrump foi reeleito para seu segundo mandato em 2020, superando o candidato do Partido Democrata, Joe Biden, no pleito realizado naquele ano.', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 38, 'completion_tokens': 277, 'total_tokens': 315}}
+2024-11-18 20:37:19,733 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 20:37:19,734 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 20:37:20,044 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 20:37:20,045 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 20:37:20,364 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-18 20:37:20,364 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-18 20:37:20,369 - DEBUG - Using proactor: IocpProactor
+2024-11-18 20:37:40,187 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:37:41,302 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 419
+2024-11-18 20:37:44,668 - DEBUG - Starting new HTTPS connection (1): www.bbc.com:443
+2024-11-18 20:37:45,278 - DEBUG - https://www.bbc.com:443 "GET /portuguese/articles/cly2r1kxvj4o HTTP/1.1" 200 63610
+2024-11-18 20:37:45,309 - DEBUG - Starting new HTTPS connection (1): noticias.uol.com.br:443
+2024-11-18 20:37:45,880 - DEBUG - https://noticias.uol.com.br:443 "GET /internacional/ultimas-noticias/2024/11/06/quem-ganhou-as-eleicoes-nos-estados-unidos.htm HTTP/1.1" 200 75719
+2024-11-18 20:37:45,975 - DEBUG - Starting new HTTPS connection (1): pt.wikipedia.org:443
+2024-11-18 20:37:46,110 - DEBUG - https://pt.wikipedia.org:443 "GET /wiki/Elei%C3%A7%C3%A3o_presidencial_nos_Estados_Unidos_em_2024 HTTP/1.1" 200 None
+2024-11-18 20:37:46,285 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:38:01,921 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 1419
+2024-11-18 20:38:01,923 - DEBUG - Prompt recebido: quem foi eleito nas ultimas eleições dos estados unidos?
+2024-11-18 20:38:01,924 - DEBUG - Prompt processado: quem foi eleito nas ultimas eleições dos estados unidos?
+2024-11-18 20:38:01,925 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:38:07,852 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 912
+2024-11-18 20:38:07,853 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-b6f2dd1b-c4b6-412d-9dbc-6b7d38912318', 'object': 'chat.completion', 'created': 1731973081, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'As últimas eleições presidenciais nos Estados Unidos foram realizadas em 2022, mas essa não é a eleição presidencial mais recente. A eleição presidencial mais atualmente relevante foi a de 2020.\n\nNa eleição presidencial de 2020:\n\n- Joe Biden foi eleito presidente.\n- Donald Trump era o presidente em cargo e tentou uma reeleição, mas não conseguiu.\n\nÉ importante notar que, desde então (2023), as eleições locais e de meio mandato já ocorreram. Se você estiver interessado nas eleições mais recentes ou específicas, por favor, informe a qual período você está se referindo.', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 45, 'completion_tokens': 161, 'total_tokens': 206}}
+2024-11-18 20:41:03,640 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 20:41:03,641 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 20:41:03,946 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 20:41:03,946 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 20:41:04,255 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-18 20:41:04,255 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-18 20:41:04,261 - DEBUG - Using proactor: IocpProactor
+2024-11-18 20:43:23,307 - DEBUG - Prompt recebido: oi
+2024-11-18 20:43:23,307 - DEBUG - Prompt processado: oi
+2024-11-18 20:43:23,309 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:43:24,086 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 339
+2024-11-18 20:43:24,086 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-7f0bad86-d649-4019-b9c9-1b01be34e054', 'object': 'chat.completion', 'created': 1731973403, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
+2024-11-18 20:43:46,741 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:43:47,195 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 359
+2024-11-18 20:44:18,353 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:44:21,887 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 709
+2024-11-18 20:44:21,889 - DEBUG - Prompt recebido: oi
+2024-11-18 20:44:21,889 - DEBUG - Prompt processado: oi
+2024-11-18 20:44:21,890 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:44:22,369 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 339
+2024-11-18 20:44:22,369 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-f07bad2d-d557-421f-9685-2c307c78dfa8', 'object': 'chat.completion', 'created': 1731973461, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
+2024-11-18 20:45:02,148 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 20:45:02,148 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 20:45:02,460 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 20:45:02,461 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 20:45:02,777 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-18 20:45:02,777 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-18 20:45:02,783 - DEBUG - Using proactor: IocpProactor
+2024-11-18 20:45:18,612 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:45:19,566 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 400
+2024-11-18 20:45:22,567 - DEBUG - Starting new HTTPS connection (1): g1.globo.com:443
+2024-11-18 20:45:22,730 - DEBUG - https://g1.globo.com:443 "GET /mundo/eleicoes-nos-eua/2024/noticia/2024/11/06/trump-presidente-repercussao.ghtml HTTP/1.1" 200 None
+2024-11-18 20:45:22,913 - DEBUG - Starting new HTTPS connection (1): www.bbc.com:443
+2024-11-18 20:45:22,948 - DEBUG - https://www.bbc.com:443 "GET /portuguese/articles/crr9q9pj5kwo HTTP/1.1" 200 59242
+2024-11-18 20:45:22,979 - DEBUG - Starting new HTTPS connection (1): www.bbc.com:443
+2024-11-18 20:45:23,013 - DEBUG - https://www.bbc.com:443 "GET /portuguese/articles/c30p8045p13o HTTP/1.1" 200 64287
+2024-11-18 20:45:23,047 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:45:40,188 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 1706
+2024-11-18 20:45:40,191 - DEBUG - Prompt recebido: quem foi o eleito presidente dos eua? 
+2024-11-18 20:45:40,192 - DEBUG - Prompt processado: quem foi o eleito presidente dos eua? 
+2024-11-18 20:45:40,192 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:45:42,929 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 613
+2024-11-18 20:45:42,929 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-06ee5293-38b8-4234-ac47-c122d7cb3358', 'object': 'chat.completion', 'created': 1731973540, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'O eleito presidente dos Estados Unidos em 2020 foi Joe Biden. Ele venceu a votação presidencial contra o então presidente Donald Trump. No entanto, se você está perguntando sobre um período mais recente ou específico, por favor forneça mais detalhes para que eu possa fornecer a informação correta.', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 41, 'completion_tokens': 73, 'total_tokens': 114}}
+2024-11-18 20:54:56,131 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 20:54:56,131 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 20:54:56,442 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 20:54:56,443 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 20:54:56,751 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-18 20:54:56,752 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-18 20:54:56,757 - DEBUG - Using proactor: IocpProactor
+2024-11-18 20:55:07,309 - DEBUG - Prompt recebido: a
+2024-11-18 20:55:07,309 - DEBUG - Prompt processado: a
+2024-11-18 20:55:07,311 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:55:09,514 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 530
+2024-11-18 20:55:09,515 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-eb26cdf9-0298-456b-9d60-a4a6082fa94e', 'object': 'chat.completion', 'created': 1731974107, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': "Hello! It looks like your message might have been cut off. Could you please provide more information so I can assist you better? Whether it's a question, statement, or any other topic you'd like to discuss, feel free to share!", 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 49, 'total_tokens': 79}}
+2024-11-18 20:55:20,540 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:55:21,141 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 379
+2024-11-18 20:55:25,499 - DEBUG - Starting new HTTPS connection (1): stackoverflow.com:443
+2024-11-18 20:55:25,744 - DEBUG - https://stackoverflow.com:443 "GET /questions/1133770/how-to-convert-a-string-to-an-integer-in-javascript HTTP/1.1" 200 None
+2024-11-18 20:55:25,934 - DEBUG - Starting new HTTPS connection (1): pt.stackoverflow.com:443
+2024-11-18 20:55:26,148 - DEBUG - https://pt.stackoverflow.com:443 "GET /questions/219211/qual-a-forma-correta-de-usar-os-tipos-float-double-e-decimal HTTP/1.1" 200 None
+2024-11-18 20:55:26,205 - DEBUG - Starting new HTTPS connection (1): stackoverflow.com:443
+2024-11-18 20:55:26,425 - DEBUG - https://stackoverflow.com:443 "GET /questions/5381945/how-do-i-reverse-a-commit-in-git HTTP/1.1" 200 None
+2024-11-18 20:55:26,483 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:55:40,982 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 1382
+2024-11-18 20:55:40,985 - DEBUG - Prompt recebido: a
+2024-11-18 20:55:40,985 - DEBUG - Prompt processado: a
+2024-11-18 20:55:40,986 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:55:41,961 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 428
+2024-11-18 20:55:41,962 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-55259dcd-6293-48e5-9d0d-93bc4049dd43', 'object': 'chat.completion', 'created': 1731974140, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Hello! It seems like your message might have been cut off. Could you please provide more details so I can assist you better?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 26, 'total_tokens': 56}}
+2024-11-18 20:59:10,041 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 20:59:10,041 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 20:59:10,348 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 20:59:10,349 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 20:59:10,654 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-18 20:59:10,654 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-18 20:59:10,660 - DEBUG - Using proactor: IocpProactor
+2024-11-18 20:59:23,582 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:59:24,790 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 409
+2024-11-18 20:59:28,307 - DEBUG - Starting new HTTPS connection (1): www.bbc.com:443
+2024-11-18 20:59:28,346 - DEBUG - https://www.bbc.com:443 "GET /portuguese/articles/cly2r1kxvj4o HTTP/1.1" 200 63644
+2024-11-18 20:59:28,377 - DEBUG - Starting new HTTPS connection (1): g1.globo.com:443
+2024-11-18 20:59:28,554 - DEBUG - https://g1.globo.com:443 "GET /mundo/eleicoes-nos-eua/2024/onde-cada-candidato-venceu-na-eleicao-americana-de-2024-relembre-a-vitoria-em-cada-estado-por-donald-trump-e-kamala-harris/ HTTP/1.1" 200 None
+2024-11-18 20:59:28,697 - DEBUG - Starting new HTTPS connection (1): g1.globo.com:443
+2024-11-18 20:59:28,789 - DEBUG - https://g1.globo.com:443 "GET /mundo/eleicoes-nos-eua/2024/noticia/2024/11/06/onda-vermelha-veja-por-que-trump-venceu-com-forca-na-eleicao-dos-eua.ghtml HTTP/1.1" 200 None
+2024-11-18 20:59:29,033 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:59:45,900 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 1557
+2024-11-18 20:59:45,903 - DEBUG - Prompt recebido: Quem ganhou as eleições do EUA 2024?
+2024-11-18 20:59:45,903 - DEBUG - Prompt processado: Quem ganhou as eleições do EUA 2024?
+2024-11-18 20:59:45,904 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 20:59:51,108 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 896
+2024-11-18 20:59:51,108 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-9385d17a-ee71-4e43-b0c0-a2bbb1606946', 'object': 'chat.completion', 'created': 1731974385, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Como uma assistente de inteligência artificial, eu não tenho a capacidade de prever eventos futuros ou acesso a informações que ainda não foram oficialmente divulgadas. As eleições presidenciais dos Estados Unidos em 2024 ainda não ocorreram no momento da sua pergunta. Portanto, não posso fornecer uma resposta precisa sobre quem venceu essa eleição.\n\nPara obter a informação mais atual e precisa sobre as eleições futuras, recomendo que você acompanhe os canais oficiais de notícias confiáveis ou o site oficial da FEC (Federal Election Commission) nos Estados Unidos.', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 46, 'completion_tokens': 136, 'total_tokens': 182}}
+2024-11-18 21:06:01,421 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:06:01,904 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 358
+2024-11-18 21:06:33,191 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:06:35,341 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 546
+2024-11-18 21:06:35,343 - DEBUG - Prompt recebido: oi
+
+
+2024-11-18 21:06:35,343 - DEBUG - Prompt processado: oi
+
+
+2024-11-18 21:06:35,343 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:06:35,818 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 339
+2024-11-18 21:06:35,819 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-13154766-f331-49d5-a7db-0274d190cdb8', 'object': 'chat.completion', 'created': 1731974795, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 31, 'completion_tokens': 11, 'total_tokens': 42}}
+2024-11-18 21:06:52,625 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 21:06:52,626 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 21:06:52,951 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-18 21:06:52,952 - DEBUG - load_verify_locations cafile='C:\\Users\\mmnal\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-11-18 21:06:53,260 - DEBUG - GroqChatbot inicializado com sucesso.
+2024-11-18 21:06:53,260 - DEBUG - LlamaChat inicializado com sucesso.
+2024-11-18 21:06:53,266 - DEBUG - Using proactor: IocpProactor
+2024-11-18 21:07:12,540 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:07:13,629 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 414
+2024-11-18 21:07:16,717 - DEBUG - Starting new HTTPS connection (1): www.bbc.com:443
+2024-11-18 21:07:16,756 - DEBUG - https://www.bbc.com:443 "GET /portuguese/articles/cly2r1kxvj4o HTTP/1.1" 200 63596
+2024-11-18 21:07:16,786 - DEBUG - Starting new HTTPS connection (1): noticias.uol.com.br:443
+2024-11-18 21:07:16,845 - DEBUG - https://noticias.uol.com.br:443 "GET /internacional/ultimas-noticias/2024/11/06/quem-ganhou-as-eleicoes-nos-estados-unidos.htm HTTP/1.1" 200 75847
+2024-11-18 21:07:16,948 - DEBUG - Starting new HTTPS connection (1): www.bbc.com:443
+2024-11-18 21:07:16,989 - DEBUG - https://www.bbc.com:443 "GET /portuguese/articles/c4g7e6kkj9zo HTTP/1.1" 200 62951
+2024-11-18 21:07:17,021 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:07:30,384 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 1286
+2024-11-18 21:07:30,386 - DEBUG - Prompt recebido: quem ganhou as eleições dos estados unidos?
+2024-11-18 21:07:30,386 - DEBUG - Prompt processado: quem ganhou as eleições dos estados unidos?
+2024-11-18 21:07:30,387 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:07:34,008 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 659
+2024-11-18 21:07:34,008 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-0df98f44-1a0a-4fbc-a6c9-39f99067393f', 'object': 'chat.completion', 'created': 1731974850, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'A eleição presidencial dos Estados Unidos de 2020 foi vencida pelo democrata Joe Biden, contra o republicano Donald Trump. Biden se tornou o 46º presidente dos Estados Unidos, tomando posse em 20 de janeiro de 2021. No entanto, é sempre bom confirmar as fontes mais recentes caso haja eleições mais atuais que você esteja procurando informações.', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 42, 'completion_tokens': 96, 'total_tokens': 138}}
+2024-11-18 21:19:28,729 - DEBUG - Prompt recebido: a
+2024-11-18 21:19:28,729 - DEBUG - Prompt processado: a
+2024-11-18 21:19:28,730 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:19:30,031 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 420
+2024-11-18 21:19:30,032 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-ff432f89-2a97-4db7-983e-ed3698971bbd', 'object': 'chat.completion', 'created': 1731975568, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Hello! It looks like your message was cut off. Could you please provide more information so I can assist you better?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 24, 'total_tokens': 54}}
+2024-11-18 21:20:47,939 - DEBUG - Prompt recebido: oi
+2024-11-18 21:20:47,939 - DEBUG - Prompt processado: oi
+2024-11-18 21:20:47,940 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:20:48,677 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 339
+2024-11-18 21:20:48,678 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-16f39b8c-cc13-401f-99f1-5b98354763c1', 'object': 'chat.completion', 'created': 1731975647, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
+2024-11-18 21:23:57,788 - DEBUG - Prompt recebido: oi
+2024-11-18 21:23:57,789 - DEBUG - Prompt processado: oi
+2024-11-18 21:23:57,789 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:23:58,581 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 339
+2024-11-18 21:23:58,581 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-0c1835ac-eba9-4985-83de-4bddbbcf08fa', 'object': 'chat.completion', 'created': 1731975837, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
+2024-11-18 21:24:50,453 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:24:51,246 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 400
+2024-11-18 21:24:57,232 - DEBUG - Starting new HTTPS connection (1): www.bbc.com:443
+2024-11-18 21:24:57,265 - DEBUG - https://www.bbc.com:443 "GET /portuguese/articles/crr9q9pj5kwo HTTP/1.1" 200 59255
+2024-11-18 21:24:57,297 - DEBUG - Starting new HTTPS connection (1): oglobo.globo.com:443
+2024-11-18 21:24:57,562 - DEBUG - https://oglobo.globo.com:443 "GET /mundo/eleicoes-eua/noticia/2024/11/06/resultado-das-eleicoes-nos-eua-em-quais-estados-trump-ganhou.ghtml HTTP/1.1" 200 161994
+2024-11-18 21:24:57,638 - DEBUG - Starting new HTTPS connection (1): g1.globo.com:443
+2024-11-18 21:24:57,851 - DEBUG - https://g1.globo.com:443 "GET /mundo/eleicoes-nos-eua/2024/noticia/2024/11/03/como-funcionam-as-eleicoes-presidenciais-nos-eua.ghtml HTTP/1.1" 200 None
+2024-11-18 21:24:58,096 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:25:06,034 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 742
+2024-11-18 21:25:06,037 - DEBUG - Prompt recebido: Quem foi eleito nos estados unidos?
+2024-11-18 21:25:06,037 - DEBUG - Prompt processado: Quem foi eleito nos estados unidos?
+2024-11-18 21:25:06,038 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:25:10,456 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 810
+2024-11-18 21:25:10,458 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-348c2a99-21c3-4e76-92de-83db1665dda0', 'object': 'chat.completion', 'created': 1731975906, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Para responder com precisão, preciso saber qual eleição específica você está se referindo. As eleições presidenciais nos Estados Unidos ocorrem de forma regular a cada quatro anos. Se você estiver se referindo à última eleição presidencial realizada em 2020, o resultado foi Joe Biden sendo eleito como Presidente dos Estados Unidos, sucedendo Donald Trump.\n\nSe você está se referindo a outra eleição, por favor forneça mais detalhes para que eu possa fornecer a informação correta.', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 39, 'completion_tokens': 116, 'total_tokens': 155}}
+2024-11-18 21:30:08,406 - DEBUG - Prompt recebido: oi
+2024-11-18 21:30:08,406 - DEBUG - Prompt processado: oi
+2024-11-18 21:30:08,407 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:30:09,048 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 339
+2024-11-18 21:30:09,048 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-6bba9bd9-f553-4651-917a-1ca84c4a96cd', 'object': 'chat.completion', 'created': 1731976208, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
+2024-11-18 21:30:45,924 - DEBUG - Prompt recebido: oi
+2024-11-18 21:30:45,924 - DEBUG - Prompt processado: oi
+2024-11-18 21:30:45,925 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:30:46,626 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 339
+2024-11-18 21:30:46,626 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-f93b762a-bb89-49ab-aa9f-b4be6d34af4a', 'object': 'chat.completion', 'created': 1731976245, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
+2024-11-18 21:35:27,970 - DEBUG - Prompt recebido: oi
+2024-11-18 21:35:27,970 - DEBUG - Prompt processado: oi
+2024-11-18 21:35:27,970 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:35:28,745 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 339
+2024-11-18 21:35:28,746 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-417698d8-5a15-4f4f-8edd-ed220d8ba0dd', 'object': 'chat.completion', 'created': 1731976527, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
+2024-11-18 21:37:30,205 - DEBUG - Prompt recebido: oi
+2024-11-18 21:37:30,205 - DEBUG - Prompt processado: oi
+2024-11-18 21:37:30,206 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2024-11-18 21:37:30,878 - DEBUG - http://localhost:8000 "POST /v1/chat/completions HTTP/1.1" 200 339
+2024-11-18 21:37:30,878 - DEBUG - Resposta recebida da LLM API: {'id': 'chatcmpl-d3841ff9-c7f9-4eb8-b141-8312ba41bcdd', 'object': 'chat.completion', 'created': 1731976650, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'content': 'Olá! Como posso ajudar você hoje?', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 30, 'completion_tokens': 11, 'total_tokens': 41}}
