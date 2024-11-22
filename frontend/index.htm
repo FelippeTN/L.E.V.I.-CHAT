@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.E.V.I CHAT</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+    <script defer src="./scripts.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li class="active"><span class="dot"></span>Início</li>
+            <li><span class="dot"></span>Chat</li>
+            <li><span class="dot"></span>Configurações</li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="title">L.E.V.I. CHAT</div>
+        <div class="profile">
+            <span class="name">Usuário</span>
+            <div class="avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="chat-container">
+            <div class="messages" id="messages">
+                <!-- Mensagens serão exibidas aqui -->
+            </div>
+
+            <!-- Input Container -->
+            <div class="input-container">
+                <!-- Barra de texto -->
+                <textarea id="userInput" placeholder="Digite seu prompt aqui..."></textarea>
+
+                <!-- Botão de enviar -->
+                <button class="send-button" onclick="sendMessage()">
+                    <i class="fa-solid fa-paper-plane"></i> Enviar
+                </button>
+
+                <!-- Dropdown de opções -->
+                <div class="dropdown">
+                    <button class="dropdown-button">Opções</button>
+                    <div class="dropdown-content">
+                        <button onclick="openModal()">Ver Links</button>
+                        <button onclick="document.getElementById('fileInput').click();">Inserir Documentos</button>
+                        <button id="webSearchCheckbox" onclick="toggleWebSearch()">Web Search</button>
+                    </div>
+                </div>
+
+                <!-- Input oculto para upload de arquivos -->
+                <input type="file" id="fileInput" accept=".pdf" style="display: none;" onchange="updateFileName()">
+
+                <div>
+                    <span id="fileName" class="file-name"></span>
+                    <i class="fa-solid fa-trash" id="removeFileIcon" style="display: none;" onclick="removeFile();"></i>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Links Consultados</h2>
+            <div id="linksContainer"></div>
+        </div>
+    </div>
+</body>
+</html>

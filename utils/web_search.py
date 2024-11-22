@@ -52,6 +52,7 @@ def gerar_termos_busca(prompt_usuario: str) -> str:
 
 async def extrair_dados_bing(termos_busca: str):
     resultados_extracao = []
+    lista_url = []
 
     try:
         # Playwright precisa ser chamado de forma assíncrona
@@ -73,12 +74,14 @@ async def extrair_dados_bing(termos_busca: str):
                 link = await resultado.query_selector('a')
                 link_url = await link.get_attribute('href') if link else 'Sem link'
                 resultados_extracao.append({'titulo': titulo_texto, 'link': link_url})
-
+                lista_url.append(link_url)
+            
+                
             await browser.close()
     except Exception as e:
         print(f"Erro ao extrair dados do Bing: {e}")
 
-    return resultados_extracao
+    return resultados_extracao, lista_url[:2]
 
 def bing_search(resultados_extracao, prompt_user: str):
     """

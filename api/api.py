@@ -29,8 +29,9 @@ class PromptRequest(BaseModel):
 
 async def handle_web_search(prompt: str):
     termo_busca = gerar_termos_busca(prompt)
-    search = await extrair_dados_bing(termo_busca)
-    return bing_search(search, prompt)
+    search, link_url = await extrair_dados_bing(termo_busca)
+    web_response = bing_search(search, prompt)
+    return web_response, link_url
 
 def handle_pdf_input(pdf_base64: Optional[str], pdf_path: Optional[str]):
     if pdf_base64:
@@ -49,7 +50,12 @@ def handle_pdf_input(pdf_base64: Optional[str], pdf_path: Optional[str]):
 
 async def process_request(request: PromptRequest, chatbot):
     pdf_base64_or_path = handle_pdf_input(request.pdf_base64, request.pdf_path)
-    web_response = await handle_web_search(request.prompt) if request.web_search else None
+    
+    if request.web_search:
+        web_response, links = await handle_web_search(request.prompt)
+    else:
+        web_response, links = None, None
+    
 
     try:
         response = chatbot.send_prompt(request.prompt, pdf_base64_or_path=pdf_base64_or_path)
@@ -59,7 +65,7 @@ async def process_request(request: PromptRequest, chatbot):
     return {
         "prompt": request.prompt,
         "response": web_response or response,
-        "links": ["https://link1.com", "https://link2.com"]
+        "links": links
     }
 
 @app.post("/groq_chat")
